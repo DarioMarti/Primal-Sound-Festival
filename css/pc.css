@@ -1,0 +1,526 @@
+ header{
+ 	display: flex;
+ 	justify-content: space-around;
+ 	align-items: center;
+ 	height: 100px;
+ 	/*background-color: #00E6BF;*/
+ 	color: #37374B;
+ }
+
+ h1{
+ 	font-family: 'Poppins', sans-serif;
+ 	text-transform: uppercase;
+ 	line-height: 25px;
+ 	font-size: 25px;
+ 	color:white;
+ }
+ .logo{
+ /*	background-color: red;*/
+ 	width: 25%;
+ 	padding: 0 150px;
+ }
+ nav{
+ 	/*	background-color: blue;*/
+ 	width: 50%;
+ 	display: flex;
+ 	justify-content: space-around;
+ 	font-size: 16px;
+ 	font-family: 'Poppins', sans-serif;
+ }
+ nav a{
+ 	color:white;
+ }
+ .opciones{
+ 	/*	background-color: orange;*/
+ 	width: 25%;
+ 	display: flex;
+ 	justify-content: center;
+ 	font-size: 16px;
+ 	color:white;
+ }
+ .opciones .idioma{
+ 	display: flex;
+ 	margin: 0 30px;
+ }
+ .opciones .idioma p{
+ 	margin: 0 5px;
+ }
+ .cat,.esp{
+ 	cursor: pointer;
+ }
+ #buscador{
+ 	cursor: pointer;
+ }
+ .franjaBuscador{
+ 	display: none;
+ 	width: 300px;
+ 	height: 50px;
+ 	background-color: rgba(255,255,255,1);
+ 	position: absolute;
+ 	top: 100px;
+ 	right: 200px;
+ 	padding: 0 20px;
+ 	font-size: 16px;
+ }
+ .franjaBuscador:hover{
+ 	background-color: rgba(255,255,255,0.8);
+ }
+ .buscando{
+ 	display: block;
+ }
+.cabecera{
+	height:1000px; 
+	width:100%;
+	background-image: url('../img/5.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/*
+.menu{
+	display: none;
+	width: 100%;
+	height: 350px;
+	background-color: white;
+	position: absolute;
+	top: 100px;
+}
+.submenu{
+	display: flex;
+	justify-content:space-around;
+	width: 90%;
+	margin: 0 auto;
+}
+.submenu li{
+	margin: 10px 0;
+}
+.titulo{
+	font-size: 18px;
+	font-weight: 600;
+	margin: 20px 0 30px 0 !important;
+}
+.textos{
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+}
+.menuHome{
+
+	height: 350px;
+	width: 600px;
+	background-image: url('../img/Home.jpg');
+	background-position: top center;
+	background-size:cover;
+}*/
+#contador{
+	display: flex;
+	justify-content: center;
+	margin:200px 0;
+}
+.simply-section{
+
+	width: 180px;
+	height: 180px;
+	margin: 0 20px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.simply-amount{
+
+	font-size: 65px;
+	font-weight: 700;
+	line-height: 40px;
+	color: white;
+}
+.simply-word{
+	font-size: 55px;
+	font-weight: 700;
+	color:white;
+}
+.contenido{
+	display: flex;
+	justify-content: space-around;
+	margin: 10px 0;
+}
+.apartado{
+	width: 100%;
+	height: 50px;
+	margin: 50px 0 50px 0;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 22px;
+}
+.izq1 a, .izq2 a, .der1 a, .der2 a,.cen1 a, .cen2 a{
+	height: 100%;
+	width: 100%;
+}
+.izq1, .izq2, .der1, .der2,.cen1, .cen2{
+	height: 500px;
+	width: 33%;
+	background-size: cover;
+	background-position: top center ;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.izq1:hover .negro,.izq2:hover .negro,.cen1:hover .negro,.cen2:hover .negro,.der1:hover .negro,.der2:hover .negro{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.izq1:hover .group,.izq2:hover .group,.cen1:hover .group,.cen2:hover .group,.der1:hover .group,.der2:hover .group{
+	color:white;
+	display: block;
+	}
+.group{
+	display: none;
+font-size: 30px;
+color: white;
+}
+.izq1{
+	background-image: url('../img/bandas/LoveOfLesbian2.jpg');
+}
+.izq2{
+	background-image: url('../img/bandas/BelleAndSebastian.jpg');
+}
+.cen1{
+	background-image: url('../img/bandas/LoryMeyers.jpg');
+}
+.cen2{
+	background-image: url('../img/bandas/VetustaMorla.jpg');
+}
+.der1{
+	background-image: url('../img/bandas/Triangulo.jpg');
+}
+.der2{
+	background-image: url('../img/bandas/parcels.jpg');
+}
+.izq:hover{
+	background-color: black;
+}
+
+.boton{
+	width: 100%;
+	text-align: center;
+	margin: 80px 0 120px 0;
+}
+.boton button{
+	width: 200px;
+	height: 50px;
+	background-color: black;
+	color:white;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.boton button:hover{
+	background-color: rgba(0,0,0,0);
+	border: 1px solid black;
+	color:black;
+}
+.bandas{
+	font-size: 40px;
+}
+.secciones{
+	width: 100%;
+	display: flex;
+}
+
+.secIzq{
+	height: 700px;
+	width: 50%;
+	background-image: url('../img/8.jpg');
+	background-position: top center;
+	background-size: cover;
+}
+.secDer{
+	height: 700px;
+	width: 50%;
+	background-image: url('../img/3.jpg');
+	background-position: top center;
+	background-size: cover;
+}
+.secIzq:hover .secInt{
+display: flex;
+}
+.secInt{
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 20%;
+	color: white;
+	background-color: rgba(0,0,0,0.9);
+	height: 100%;
+	width: 100%;
+}
+
+
+.secInt h2{
+	font-size: 56px;
+	margin: 20px 0 60px 0;
+	font-weight: 800;
+}
+.secInt p{
+	font-size: 20px;
+	color:#BABABA;
+	font-weight: 200;
+}
+.secInt button{
+width: 200px;
+	height: 50px;
+	background-color: black;
+	color:white;
+}
+.secInt button:hover{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+.filtro{
+	background-color: rgba(0,0,0,.2);
+	width: 100%;
+	height: 100%;
+
+}
+.info button{
+	width: 200px;
+	height: 50px;
+	background-color: rgba(0,0,0,0);
+	color:white;
+}
+.info button:hover{
+	background-color: rgba(255,255,255,1);
+	color:black;
+}
+.tickets{
+	width: 100%;
+	height: 400px;
+	background-image: url('../img/10.jpg');
+	background-position: 80% 90%;
+	background-size: cover;
+	margin: 100px 0;
+}
+.info{
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 10%;
+	height: 100%;
+	width: 100%;
+}
+.info h2{
+	font-size: 50px;
+	font-weight: 800;
+}
+.raya{
+	height: 10px;
+	width: 100px;
+	background-color: white;
+	margin: 10px 0 60px 0;
+}
+.CalContenido{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 40px auto;
+	width: 80%;
+	padding: 0 10%;
+}
+.CalTitular{
+	padding: 0 20%;
+	margin-bottom: 50px;
+}
+.CalTitular p{
+	color:#BABABA;
+	font-size: 20px;
+}
+.CalTitular h2{
+	font-size: 32px;
+}
+.CalContenido .CalConizq{
+	display: flex;
+	align-items: center;
+	width: 40%;
+}
+.CalContenido h2{
+	font-size: 60px;
+}
+.CalBanda{
+	font-size: 24px;
+}
+.fecha {
+	margin: 0 50px;
+	font-size: 20px;
+}
+.Newsletter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 450px;
+
+}
+.Newsraya{
+	width: 100%;
+	height: 1px;
+	background-color: black;
+}
+.Newsletter h2{
+	font-size: 35px;
+line-height: 90px;
+}
+.Newsletter p{
+	font-size: 18px;
+
+}
+#email{
+	margin: 40px 0;
+	width: 40%;
+	height: 50px;
+	padding: 0 1.5%;
+	font-size: 18px;
+}
+.Newsletter .boton{
+	margin: 10px 0 0 0;
+}
+.patrocinadores{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 60%;
+	margin: 0 auto;
+	height: 300px;
+
+}
+.patro{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	width: 160px;
+
+}
+.patro img{
+	width: 100%;
+}
+.patro2{
+	width: 200px !important;
+}
+
+.patro:last-child img{
+	height: 100%;
+
+}
+
+footer{
+	height: 300px;
+	width: 100%;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+footer p{
+	line-height: 40px;
+}
+.redes{
+	text-align: center;
+	margin: 20px 0;
+	height: 50px;
+	font-size: 40px;
+	padding-left: 100px 0;
+}
+.redes i{
+	margin: 0 10px;
+}
+
+/*+++++++++++++++ PAGINA ARTISTA ++++++++++++++++++++++++*/
+.cabeceralove{
+	height: 600px;
+	width: 100%;
+	background-image: url('../img/bandas/LoveOfLesbian.webp');
+}
+.descripcion{
+	height: 700px;
+	width: 100%;
+	background-color: black;
+	padding: 80px 20%;
+}
+.descripcion .nombre{
+font-size: 18px;
+	color:#BABABA;
+}
+.descripcion h2{
+	font-size: 30px;
+	color: white;
+}
+.texto{
+	font-size: 14px;
+	line-height: 24px;
+	margin: 20px 0;
+	width: 80%;
+	color: white;
+}
+
+.seccionMusica{
+	width: 100%;
+	background-color:black;
+}
+.fondoMusica{
+	height: 600px;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: space-around;
+	display: flex;
+	align-items: center
+}
+.musica{
+
+	width: 760px;
+	height: 515px;
+}
+.musica iframe{
+	width: 100%;
+	height: 100%;
+}
+.seccionCancion{
+	height: 500px;
+	width: 600px;
+
+}
+.seccionCancion .nombre{
+	color:#BABABA;
+	font-size: 18px;
+}
+.raya2{
+	height: 10px;
+	width: 80px;
+	background-color: white;
+}
+.seccionCancion h2{
+	font-size: 40px;
+	color:white;
+}
+.contenSepa{
+	background-color: black;
+	padding: 100px 0;
+
+}
+.separador{
+	height: 1px;
+	background-color: white;
+	width: 100%;
+
+}
