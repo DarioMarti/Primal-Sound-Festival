@@ -30,6 +30,9 @@
  nav a{
  	color:white;
  }
+ nav li:hover a{
+	color:#F6E399;
+}
  .opciones{
  	/*	background-color: orange;*/
  	width: 25%;
