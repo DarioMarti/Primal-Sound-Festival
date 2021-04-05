@@ -28,10 +28,30 @@
  	font-family: 'Poppins', sans-serif;
  }
  nav a{
+ 	position: relative;
+
  	color:white;
+ 	font-weight: 500;
+ }
+
+ .borde{
+ 	position: absolute;
+ 	bottom: -6px;
+ 	height: 4px;
+ 	width: 0%;
+ 	background-color: #F6E399;
+ 	transition: .7s;
+ } 
+ .bordefijo{
+ 	width: 100%;
+ 	 color: #F6E399;
  }
  nav li:hover a{
 	color:#F6E399;
+}
+nav li:hover a .borde{
+		transition: .7s;
+	width: 100%;
 }
  .opciones{
  	/*	background-color: orange;*/
@@ -60,7 +80,7 @@
  	height: 50px;
  	background-color: rgba(255,255,255,1);
  	position: absolute;
- 	top: 100px;
+ 	top: 110px;
  	right: 200px;
  	padding: 0 20px;
  	font-size: 16px;
@@ -71,7 +91,10 @@
  .buscando{
  	display: block;
  }
-.cabecera{
+.cabeceraInd{
+	position: absolute;
+	top: 0;
+	left: 0;
 	height:1000px; 
 	width:100%;
 	background-image: url('../img/5.jpg');
@@ -79,42 +102,6 @@
 	background-size: cover;
 	background-position: center;
 }
-/*
-.menu{
-	display: none;
-	width: 100%;
-	height: 350px;
-	background-color: white;
-	position: absolute;
-	top: 100px;
-}
-.submenu{
-	display: flex;
-	justify-content:space-around;
-	width: 90%;
-	margin: 0 auto;
-}
-.submenu li{
-	margin: 10px 0;
-}
-.titulo{
-	font-size: 18px;
-	font-weight: 600;
-	margin: 20px 0 30px 0 !important;
-}
-.textos{
-	display: flex;
-	justify-content: space-between;
-	width: 30%;
-}
-.menuHome{
-
-	height: 350px;
-	width: 600px;
-	background-image: url('../img/Home.jpg');
-	background-position: top center;
-	background-size:cover;
-}*/
 #contador{
 	display: flex;
 	justify-content: center;
@@ -151,7 +138,7 @@
 .apartado{
 	width: 100%;
 	height: 50px;
-	margin: 50px 0 50px 0;
+	margin:1050px 0 50px 0;
 	text-align: center;
 	display: flex;
 	justify-content: space-around;
@@ -299,6 +286,7 @@ width: 200px;
 	height: 50px;
 	background-color: rgba(0,0,0,0);
 	color:white;
+	cursor: pointer;
 }
 .info button:hover{
 	background-color: rgba(255,255,255,1);
@@ -311,6 +299,7 @@ width: 200px;
 	background-position: 80% 90%;
 	background-size: cover;
 	margin: 100px 0;
+
 }
 .info{
 	color: white;
@@ -450,10 +439,74 @@ footer p{
 }
 
 /*+++++++++++++++ PAGINA ARTISTA ++++++++++++++++++++++++*/
-.cabeceralove{
+.cabecera {
 	height: 600px;
 	width: 100%;
+	background-position: top center;
+	background-size: cover;
+}
+.cabeceralove{
 	background-image: url('../img/bandas/LoveOfLesbian.webp');
+}
+.cabeceralori{
+	background-image: url('../img/bandas/LoryMeyers2.jpg');
+}
+.cabeceratriangulo{
+	background-image: url('../img/bandas/Triangulo2.webp');
+		background-position: center;
+}
+.cabecerabelle{
+	background-image: url('../img/bandas/belle.jpg');
+	background-position: 80% 30%;
+}
+.cabeceravetusta{
+	background-image: url('../img/bandas/vetusta2.webp');
+	background-position: 80% 20%;
+}
+.cabeceraparcels{
+	background-image: url('../img/bandas/parcels2.jpg');
+}
+.cabeceraiseo{
+	background-image: url('../img/bandas/iseo2.jpg');
+	background-position: 80% 30%;
+}
+.cabecerabig{
+	background-image: url('../img/bandas/bigmon2.jpg');
+}
+.cabecerakostrok{
+	background-image: url('../img/bandas/Kostrok2.jpg');
+	background-position: 80% 40%;
+}
+.cabeceraspring{
+	background-image: url('../img/bandas/spring2.jpg');
+}
+.cabecerastreet{
+	background-image: url('../img/bandas/mani2.jpg');
+	background-position: 80% 8%;
+}
+.cabeceramew{
+	background-image: url('../img/bandas/mew2.jpg');
+	background-position: 80% 10%;
+}
+.cabeceraocellot{
+	background-image: url('../img/bandas/ocellot2.jpg');
+	background-position: 80% 30%;
+}
+.cabeceravulcano{
+	background-image: url('../img/bandas/nuevavulcano.jpg');
+	background-position: 80% 20%;
+}
+.cabeceranudo{
+	background-image: url('../img/bandas/nudozurdo2.jpg');
+	background-position: 80% 10%;
+}
+.cabeceramatt{
+	background-image: url('../img/bandas/matt.jpg');
+	background-position: 80% 20%;
+}
+.cabeceratoundra{
+	background-image: url('../img/bandas/toundra2.jpg');
+	background-position: 80% 40%;
 }
 .descripcion{
 	height: 700px;
@@ -526,4 +579,335 @@ font-size: 18px;
 	background-color: white;
 	width: 100%;
 
+}
+/*++++++++++++++++ ENTRADAS ++++++++++++++++++++++++++++++*/
+.header{
+	background-color: black;
+}
+.entradas{
+	margin-top: 100px;
+}
+.entradas h2{
+	margin: 40px 150px;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.pack,.dias,.concierto{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 150px;
+	border-top: 1px solid black;
+}
+.entradatexto{
+	width: 500px;
+}
+.packimg, .diaimg, .conciertoimg{
+	height: 300px;
+	width: 300px;
+	background-size: cover;
+	background-position: top center;	
+}
+.packimg{
+	background-image: url('../img/camping.jpg');
+	
+}
+.diaimg{
+	background-image: url('../img/camping2.jpg');	
+}
+.conciertoimg{
+	background-image: url('../img/camping.jpg');	
+}
+.precio{
+	margin: 30px 0;
+	font-size: 30px;
+	font-weight: 600;
+}
+.cantidad{
+	width: 150px;
+	height: 50px;
+
+	display: flex;
+	justify-content: space-between;
+}
+.menor, .mayor{
+	height: 50px;
+	width: 40px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.numero{
+	width: 70px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+}
+.numero p{
+	font-size: 25px;
+}
+.entradaboton, .bandaBoton{
+	height: 50px;
+	width: 150px;
+	background-color: black;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+.entradaboton:hover, .bandaBoton:hover{
+	border: 1px solid black;
+	background-color: white;
+	color:black;
+}
+
+/*+++++++++++++++ PAGINA GRUPOS ++++++++++++++++++++++++*/
+.bandasPag{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 150px;
+	width:100%; 
+}
+.grupo{
+	margin-top: 40px;
+	height: 800px;
+	width: calc(25% - 20px); 
+	position: relative;
+	margin: 40px 10px;
+
+}
+.grupoimg{
+	height:400px;
+	width: 100%;
+	background-color: tomato;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.text{
+	padding: 20px;
+
+}
+.text p{
+		margin: 10px 0 0 0;
+}
+.seccionBanda{
+	width: 100%;
+	margin: 100px 150px 0px 150px;
+	font-size: 22px;
+	text-transform: uppercase;
+	
+}
+.bandaBoton{
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+}
+.grupoimg img{
+	height: 100%;
+
+}
+/*+++++++++++++++ PAGINA FESTIVAL ++++++++++++++++++++*/
+
+.festival{
+	margin:200px auto;
+	width: 50%;
+	height: 2000px;
+	font-size: 18px;
+}
+.festival h2{
+	margin-bottom: 20px;
+}
+.cartel{
+	background-image: url('../img/cartel_prueba.jpg');
+	background-position: top center;
+	background-size: contain;
+	height: 65%;
+	width: 100%;
+	margin: 200px 0;
+}
+/*++++++++++++++++ INFORMACIÓN ++++++++++++++++++++++++++++++*/
+.mapa{
+	width: 50%;
+	height: 600px;
+	margin: 150px auto;
+	background-image: url(../img/mapa.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.acampada, .taquillas, .otra{
+	width: 100%;
+	height: 500px;
+	padding: 0 150px;
+	margin: 200px 0;
+
+}
+.acampada h2, .infoTaq h2{
+	padding-bottom: 40px;
+}
+.infoAcam, .infoTaq{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+
+}
+.textoAcam, .textoTaq{
+	width:50%;
+}
+.infoAcam p{
+	padding-right: 100px;
+	font-size: 18px;
+	line-height: 30px;
+}
+.textoTaq h2{
+	padding-left: 100px;
+}
+.textoTaq p{
+	padding-left: 100px;
+	font-size: 18px;
+	line-height: 30px;
+
+}
+.imagenAcam, .imagenTaq{
+	width: 50%;
+	height: 500px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.imagenAcam{
+		background-image: url(../img/camping.jpg);
+}
+.imagenTaq{
+		background-image: url(../img/taquilla.jpg);
+}
+.comida{
+	background-image: url(../img/burguer.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 700px;
+	display: flex;
+	justify-content: flex-start;
+	padding: 150px;
+	align-items: flex-end;
+}
+.textoComida{
+	height: 300px;
+	width: 500px;
+	background-color: rgba(0,0,0,.8);
+	color: white;
+	padding: 40px;
+}
+.textoComida h2{
+	margin-bottom: 20px;
+
+}
+.textoComida p{
+		font-size: 18px;
+}
+.otra{
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+.seccion{
+	width: 25%;
+}
+.seccion p{
+	text-align: left;
+	color: transparent;
+	padding:5px 40px;
+
+}
+.textoOtra h4{
+	color: transparent;
+	text-align: left;
+	padding: 0 40px;
+}
+.icon i{
+font-size: 30pt;
+}
+.textoOtra{
+	height: 0px;
+	width: 100%;
+}
+.icon:hover .textoOtra{
+background-color: white;
+height: 200px;
+transition: 1.5s;
+}
+.icon:hover .textoOtra p, .icon:hover .textoOtra h4{
+	color: black;
+	transition: 1.3s;
+}
+.hotel{
+	margin-top: 10px;
+}
+.textoOtra a p{
+color:transparent;
+transition: 0s !important;
+}
+.textoOtra a p:hover{
+color:#F6E395 !important;
+transition: 0s !important;
+}
+/*++++++++++++++++ CONTACTO ++++++++++++++++++++++++++++++*/
+
+.contacto{
+	display: flex;
+	justify-content: space-around;
+	margin:70px 0;
+	padding: 100px 150px;
+	height: 800px;
+	background-color: black;
+	color: white;
+}
+.contactoimg{
+	height: 500px;
+	width: 50%;
+	background-color: tomato;
+}
+.contactoTexto{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	padding:10px 80px;
+	height: 500px;
+	width: 50%;
+
+}
+.contactoTexto h2{
+	font-size: 33px;
+	margin-bottom: 30px;
+}
+.contactoTexto p{
+	font-size: 18px;
+}
+.contacto .botonContact{
+	background-color: red;
+	width: 100%;
+	height: 60px;
+	margin-top: 50px;
+}
+.botonContact button{
+	width: 100%;
+	height: 60px;
+	background-color: black;
+	color:white;
+	margin: 0 auto;
+	cursor: pointer;
+	font-size: 16px;
+}
+.botonContact button:hover{
+	background-color: white;
+	color: black;
 }

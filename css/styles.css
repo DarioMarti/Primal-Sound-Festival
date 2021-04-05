@@ -13,3 +13,18 @@ a{
 li{
 	list-style-type: none;
 }
+#numper{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	color: black;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+
+}
