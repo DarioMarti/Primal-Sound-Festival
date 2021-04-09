@@ -21,6 +21,7 @@
 <!--+++++++++++++++++++++++++ Hojas de estilo +++++++++++++++++++++++++-->
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/pc.css">
+<link rel="stylesheet" type="text/css" href="css/movil.css">
 </head>
 <body id="body">
 	
@@ -32,7 +33,7 @@
 		</div>
 		<nav>
 			<li id="entradas"><a href="entradas.html">Entradas<div class="borde"></div></a></li>
-			<li id="Bandas"><a href="bandas.html">Bandas<div class="borde"></div></a></li>
+			<li id="Bandas"><a data-scroll href="bandas.html">Bandas<div class="borde"></div></a></li>
 			<li id="ElFestival"><a href="festival.html">El festival<div class="borde"></div></a></li>
 			<li id="Info"><a href="info.html">Información<div class="borde"></div></a></li>
 			<li id="Contacto"><a href="contacto.html">Contacto<div class="borde"></div></a></li>
@@ -41,26 +42,29 @@
 			<div id="buscador"><i class="fas fa-search"></i></div>
 			<div class="idioma"><p class="cat">CAT</p><p>|</p><p class="esp">ESP</p></div>	
 		</div>
-
 	</header>
+
 	<div class="cabeceraInd" >
 	<div id="contador"></div>
-	<input type="text" name="franjaBuscador" class="franjaBuscador" id="franjaBuscador" placeholder="Buscar"> >
+	<div id="cuadro"></div>
+	<div class="empezar" id="empezar"><a href="#contenido" id="btnEmp"><p>G O</p></a></div>
+	<div class="espera"></div>
+	<input type="text" name="franjaBuscador" class="franjaBuscador" id="franjaBuscador" placeholder="Buscar"> 
 		</div>
 
-	<div class="apartado"><h2>ARTISTAS</h2></div>
+	<div class="apartado" id="apartado"><h2>ARTISTAS</h2></div>
 	<div class="contenido">
 		<div class="izq1"><a href="bandas/love of lesbian.html"><div class="negro"><h3 class="group">Love of Lesbian</h3></div></a></div>
 		<div class="cen1"><a href="bandas/Lori meyers.html"><div class="negro"><h3 class="group">Lori Meyers</h3></div></a></div>
 		<div class="der1"><a href="bandas/Triangulo.html"><div class="negro"><h3 class="group">Triangulo de Amor Bizarro</h3></div></a></div>
 	</div>
-	<div class="contenido">
+	<div class="contenido" >
 		<div class="izq2"><a href="bandas/belleandsebastian.html"><div class="negro"><h3 class="group">Belle And Sebastian</h3></div></a></div>
 		<div class="cen2"><a href="bandas/Vetusta.html"><div class="negro"><h3 class="group">Vetusta Morla</h3></div></a></div>
 		<div class="der2"><a href="bandas/parcels.html"><div class="negro"><h3 class="group">Parcels</h3></div></a></div>
 	</div>
 	<div class="boton"><button>Ver más</button></div>
-	<div class="secciones">
+	<div class="secciones" >
 		<div class="secIzq">
 			<div class="secInt">
 			<p>Información | Festival</p>
@@ -70,7 +74,7 @@
 		</div>
 		<div class="secDer"></div>
 	</div>
-	<div class="tickets">
+	<div class="tickets"id="contenido">
 			
 			<div class="filtro">
 				<div class="info">
@@ -158,5 +162,6 @@
 <script src="js/header.js" language="javascript"></script>
 <script src="js/simplyCountdown.min.js" language="javascript"></script>
 <script src="js/countdown.js" language="javascript"></script>
+<script src="js/smooth-scroll.min.js" language="javascript"></script>
 </body>
 </html>

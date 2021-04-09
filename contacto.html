@@ -20,7 +20,9 @@
 <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
 <!--+++++++++++++++++++++++++ Hojas de estilo +++++++++++++++++++++++++-->
 <link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/movil.css">
 <link rel="stylesheet" type="text/css" href="css/pc.css">
+
 </head>
 <body id="body">
 	
@@ -33,9 +35,9 @@
 		<nav>
 			<li id="entradas"><a href="entradas.html">Entradas<div class="borde"></div></a></li>
 			<li id="Bandas"><a href="bandas.html">Bandas<div class="borde"></div></a></li>
-			<li id="ElFestival"><a href="festival.html"class="bordefijo">El festival<div class="borde bordefijo"></div></a></li>
+			<li id="ElFestival"><a href="festival.html">El festival<div class="borde "></div></a></li>
 			<li id="Info"><a href="info.html">Información<div class="borde"></div></a></li>
-			<li id="Contacto"><a href="contacto.html">Contacto<div class="borde"></div></a></li>
+			<li id="Contacto"><a href="contacto.html"class="bordefijo">Contacto<div class="borde bordefijo"></div></a></li>
 		</nav>
 		<div class="opciones">
 			<div id="buscador"><i class="fas fa-search"></i></div>
@@ -45,23 +47,15 @@
 	</header>
 	<input type="text" name="franjaBuscador" class="franjaBuscador" id="franjaBuscador" placeholder="Buscar"> >
 	<section class="contacto">
-		<div class="contactoimg"></div>
-		<div class="contactoTexto">
-			<h2>Contactanos y Caminemos al exito</h2>
+		
+		<form class="contactoTexto" method="post" action="enviar.php">
+			<h2>Contáctanos</h2>
 			<p>¿Tienes algún problema o duda sobre el festival que necesita ser resuelta?. Contacta con nosotros e intentaremos resolvertela de la manera más rápida posible.</p>
-			<div class="botonContact"><button>Ver más</button></div>
-		</div>
+			<input type="text" name="nombre" placeholder="nombre" id="nombre">
+			<input type="email" name="email" placeholder="email" id="email">
+			<input type="submit" name="enviar" class="botonContact" value="Enviar" id="enviar">
+		</form>
 	</section>
-
-
-	<div class="Newsraya"></div>
-	<div class="patrocinadores">
-		<div class="patro"><img src="img/patrocinadores/cocacola.svg"></div>
-		<div class="patro patro2"><img class="elche" src="img/patrocinadores/elche.svg"></div>
-		<div class="patro"><img src="img/patrocinadores/santander.svg"></div>
-		<div class="patro"><img src="img/patrocinadores/monster.svg"></div>
-	</div>
-	
 	<footer>
 		<p>© 2020 Primal Mood Festival, Todos los derechos reservados</p>
 		<p>PrimalMoodFestival@primalmood.com</p>

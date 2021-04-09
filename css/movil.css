@@ -1,0 +1,153 @@
+@media screen and (max-width: 480px){
+ #franjaBuscador{
+	display: none;
+}
+#header{
+	display: flex;
+	align-items: center;
+	color: white;
+	height: 150px;
+	width: 100%;
+	margin-bottom: 400px;
+	padding: 0 40px;
+}
+.logo{
+
+	width: 50%;
+	font-size: 14px;
+	line-height: 35px;
+}
+.logo a{
+	color:white;
+}
+nav{
+	display: none;
+	width: 20%;
+}
+.opciones{
+	display: flex;
+	justify-content: flex-end;
+	font-size: 18px;
+	width: 50%;
+}
+.idioma{
+	display: flex;
+
+	justify-content: space-between;
+}
+.idioma p{
+		margin: 0 0 0 20px;
+}
+.apartado{
+	margin-top: 400px;
+	background-color: red;
+}
+.cabeceraInd{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height:800px; 
+	width:100%;
+	background-image: url('../img/5.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#contador{
+	display: flex;
+	justify-content: center;
+	margin:200px 0;
+}
+.simply-section{
+	width: 180px;
+	height: 180px;
+	margin: 0 -45px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.simply-amount{
+
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 40px;
+	color: white;
+}
+.simply-word{
+	font-size: 25px;
+	font-weight: 700;
+	color:white;
+}
+#empezar{
+	position: absolute;
+	top: 300px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 4;
+}
+#btnEmp{
+	width: 120px;
+	height: 120px;
+	position: relative;
+	border-radius: 50%;
+	color: white;
+	font-weight: 800;
+	font-size: 18px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: solid 4px #21ebff;
+	border:10px solid white;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	animation-name: cuadrin;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+#btnEmp:hover{
+	background-color: #00FFB3;
+	box-shadow: 0 0 50px 15px #00FFB3;
+width: 125px;
+	height: 125px;
+}
+.esperar{
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	border-radius: 50%;
+	border: solid 4px #21ebff;
+	border:10px solid white;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	animation-name: cuadrin;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#cuadro{
+	height: 150px;
+	width: 150px;
+	border: 10px solid tomato;
+	border-radius: 50%;
+	border-top: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+
+	animation-name: cuadrin;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes cuadrin{
+	0%{transform: rotate(0deg);}
+
+	100%{transform: rotate(360deg);}
+}
+}	
