@@ -194,4 +194,242 @@ nav{
 font-size: 30px;
 color: white;
 }
+.boton{
+	width: 100%;
+	text-align: center;
+	margin: 40px 0 120px 0;
+}
+.boton button{
+	font-size: 20px;
+	width: 240px;
+	height: 70px;
+	background-color: black;
+	color:white;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.secciones{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.secIzq{
+	height: 400px;
+	width: 100%;
+	background-image: url('../img/8.jpg');
+	background-position: top center;
+	background-size: cover;
+}
+.secDer{
+	height: 400px;
+	width: 100%;
+	background-image: url('../img/3.jpg');
+	background-position: top center;
+	background-size: cover;
+}
+.secIzq .secInt{
+display: flex;
+}
+.secInt{
+
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 10%;
+	color: white;
+	background-color: rgba(0,0,0,0.8);
+	height: 100%;
+	width: 100%;
+}
+.secInt h2{
+	font-size: 28px;
+	margin: 20px 0 60px 0;
+	font-weight: 800;
+}
+.secInt p{
+	font-size: 20px;
+	color:#BABABA;
+	font-weight: 200;
+}
+.secInt button{
+width: 220px;
+	height: 60px;
+	border: white 1px solid;
+	font-size: 20px;
+	background-color: transparent;
+	color:white;
+}
+/*+++++++++++++++++TICKETS+++++++++++++++++++++++*/
+.filtro{
+	background-color: rgba(0,0,0,.2);
+	width: 100%;
+	height: 100%;
+}
+.info button{
+	width: 220px;
+	height: 60px;
+	border: white 1px solid;
+	font-size: 20px;
+	background-color: transparent;
+	color:white;
+}
+
+.tickets{
+	width: 100%;
+	height: 400px;
+	background-image: url('../img/10.jpg');
+	background-position: 80% 90%;
+	background-size: cover;
+	margin: 100px 0;
+
+}
+.info{
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 10%;
+	height: 100%;
+	width: 100%;
+}
+.info h2{
+	font-size: 30px;
+	font-weight: 800;
+	line-height: 40px;
+
+}
+.raya{
+	height: 10px;
+	width: 100px;
+	background-color: white;
+	margin: 10px 0 60px 0;
+}
+/*+++++++++++++++++CONCIERTOS+++++++++++++++++++++++*/
+.CalContenido{
+	display: flex;
+	justify-content: center;
+
+	flex-direction: column;
+	margin: 40px auto;
+	width: 80%;
+
+}
+.CalTitular{
+	padding: 0 10%;
+	margin-bottom: 50px;
+}
+.CalTitular p{
+	color:#BABABA;
+	font-size: 20px;
+}
+.CalTitular h2{
+	font-size: 32px;
+}
+.CalContenido .CalConizq{
+	display: flex;
+	align-items: center;
+	width: 40%;
+}
+.CalContenido h2{
+	font-size: 60px;
+}
+.CalBanda{
+	font-size: 20px;
+}
+.fecha {
+	margin: 0 50px;
+	font-size: 20px;
+}
+.CalEscena{
+	font-weight: 600;
+	margin-top:10px;
+	font-size: 22px;
+}
+/*+++++++++++++++++NEWLETTER+++++++++++++++++++++++*/
+.Newsletter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	height: 450px;
+
+}
+.Newsraya{
+	width: 100%;
+	height: 1px;
+	background-color: black;
+}
+.Newsletter h2{
+	font-size: 35px;
+line-height: 90px;
+}
+.Newsletter p{
+	font-size: 20px;
+	margin: 0 40px;
+
+}
+#email{
+	margin: 40px 0;
+	width: 90%;
+	height: 50px;
+	padding: 0 1.5%;
+	font-size: 18px;
+}
+.Newsletter .boton{
+	margin: 10px 0 60px 0;
+}
+/*+++++++++++++++++NEWLETTER+++++++++++++++++++++++*/
+.patrocinadores{
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 60%;
+	margin: 50px auto 150px auto;
+	height: 300px;
+
+}
+.patro{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	width: 160px;
+	margin: 20px 0;
+
+}
+.patro img{
+	width: 100%;
+}
+.patro2{
+	width: 200px !important;
+}
+
+.patro:last-child img{
+	height: 100%;
+}
+/*+++++++++++++++++FOOTER+++++++++++++++++++++++*/
+footer{
+	height: 300px;
+	padding: 50px;
+	width: 100%;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+footer p{
+	line-height: 40px;
+}
+.redes{
+	text-align: center;
+	margin: 20px 0;
+	height: 50px;
+	font-size: 40px;
+	padding-left: 100px 0;
+}
+.redes i{
+	margin: 0 10px;
+}
 }	
