@@ -523,10 +523,10 @@ footer p{
 .text p{
 	font-size: 18px;
 }
-.seccionBanda, {
+.seccionBanda {
 	width: 100%;
 	text-align: center;
-	margin: 50px 0 20px 0px;
+	margin: 60px 0 20px 0px;
 	font-size: 26px;
 	text-transform: uppercase;
 	
@@ -761,6 +761,207 @@ font-size: 18px;
 	height: 1px;
 	background-color: white;
 	width: 100%;
+}
+/*+++++++++++++++ PAGINA FESTIVAL ++++++++++++++++++++++++*/
+.festival{
+	margin:60px auto;
+	width: 100%;
+	padding: 0 5%;
+	height: 1500px;
+	font-size: 20px;
+}
+.festival h2{
+	margin-bottom: 20px;
+}
+.cartel{
+	background-image: url('../img/cartel_prueba.jpg');
+	background-position: top center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	margin: 100px 0;
+}
+/*++++++++++++++++ INFORMACIÓN ++++++++++++++++++++++++++++++*/
+.informacion{
+	height: 4300px;
 
+}
+.mapa{
+	width: 100%;
+	height: 300px;
+	margin: 70px auto;
+	background-color: tomato;
+
+}
+
+.acampada h2, .infoTaq h2{
+	padding-bottom: 40px;
+}
+.infoAcam {
+	display: flex;
+	flex-direction: column;
+
+}
+.infoTaq {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: flex-end;
+
+}
+.textoAcam, .textoTaq{
+	width:100%;
+	margin-bottom: 40px;
+}
+.infoAcam p{
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.textoTaq p{
+	font-size: 20px;
+	line-height: 30px;
+}
+.imagenAcam, .imagenTaq{
+	width: 100%;
+	height: 300px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.imagenAcam{
+		background-image: url(../img/camping.jpg);
+}
+.imagenTaq{
+		background-image: url(../img/taquilla.jpg);
+}
+.comida{
+	background-image: url(../img/burguer.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: flex-start;
+	padding: 5%;
+	align-items: flex-end;
+	margin-bottom: 40px;
+}
+.textoComida{
+	height: 300px;
+	width: 70%;
+	background-color: rgba(0,0,0,.8);
+	color: white;
+	padding: 5%;
+}
+.textoComida h2{
+	margin-bottom: 10px;
+
+}
+.textoComida p{
+		font-size: 18px;
+}
+.otra{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+.seccion{
+	width: 100%;
+	display: flex;
+}
+.seccion p{
+	text-align: left;
+	color: transparent;
+	padding:5px 40px;
+
+}
+.textoOtra h4{
+	color: transparent;
+	text-align: left;
+	padding: 0 40px;
+}
+.icon i{
+font-size: 30pt;
+}
+.textoOtra{
+	height: 0px;
+	width: 100%;
+}
+.icon:hover .textoOtra{
+background-color: white;
+height: 200px;
+transition: 1.5s;
+}
+.icon:hover .textoOtra p, .icon:hover .textoOtra h4{
+	color: black;
+	transition: 1.3s;
+}
+.hotel{
+	margin-top: 10px;
+}
+.textoOtra a p{
+color:transparent;
+transition: 0s !important;
+}
+.textoOtra a p:hover{
+color:#F6E395 !important;
+transition: 0s !important;
+}
+/*++++++++++++++++ CONTACTO ++++++++++++++++++++++++++++++*/
+.contacto{
+	display: flex;
+	justify-content: flex-start;
+	margin:20px 0 0 0;
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/contacto.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:  center;
+	color: white;
+}
+.contactoTexto{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgba(0,0,0,.8);
+	margin: auto;
+	padding:10px 5%;
+	height: 600px;
+	width: 90%;
+
+}
+.contactoTexto h2{
+	font-size: 33px;
+	margin-bottom: 20px;
+}
+.contactoTexto p{
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+#nombre, #email{
+width: 100%;
+height: 40px;
+border: none;
+padding: 0 20px;
+font-size: 14px;
+color: white;
+background-color: transparent;
+border-bottom: 1px solid white;
+}
+.contacto .botonContact{
+	background-color: white;
+	width: 100%;
+	height: 60px;
+	margin-top: 50px;
+	color:black;
+	margin: 0 auto;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 20px;
 }
 }	
