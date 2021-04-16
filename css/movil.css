@@ -2,17 +2,82 @@
  #franjaBuscador,#contador{
 	display: none;
 }
+/*++++++++++++++++MENU HAMBURGUESA+++++++++++++++*/
+.check{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top:0;
+	right: 40px;
+	z-index: 11;
+	opacity: 0;
+}
+nav{
+	position: absolute;
+	top:0px;
+	left: -100%;
+	width: 100%;
+	height: 700px;
+	background-color: rgba(0,0,0,1);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+nav a{
+		color: white;
+}
+nav li{
+	font-size: 24px;
+	margin: 15px 0;
+}
+.check:checked ~ nav{
+	left: 0;
+	transition: 1.6s;
+
+}
+
+.check:not(:checked)~ nav{
+	left: -500px;
+	transition: 1.5s;
+}
+
+#burguer{
+	padding-top: 5px;
+	top:0px;
+	right: 40px;
+	position: absolute;
+	z-index: 10;
+}
+#burguer > li{
+	background-color: white;
+	width: 45px;
+	height: 5px;
+	margin: 8px auto;
+	padding: 0;
+	border-radius: 15px;
+	border: 0;
+
+}
+.opciones i, .opciones p{
+	display: none;
+
+}
+/*++++++++++++++++HOME+++++++++++++++*/
+.header{
+	background-color: black;
+}
 #header{
 	display: flex;
 	align-items: center;
-
 	color: white;
-	height: 50px;
+	height: 60px;
 	width: 100%;
 	margin-bottom: 400px;
 	padding: 0 40px;
 }
 .logo{
+		z-index: 10;
 	width: 50%;
 	font-size: 12px;
 	line-height: 25px;
@@ -20,9 +85,7 @@
 .logo a{
 	color:white;
 }
-nav{
-	display: none;
-}
+
 .opciones{
 	display: flex;
 	justify-content: flex-end;
@@ -120,8 +183,7 @@ nav{
 	height: 60px;
 	width: 60px;
 	color: white;
-
-	z-index: 8880;
+	z-index:5;
 ;
 }
 @keyframes animate{
@@ -380,7 +442,6 @@ line-height: 90px;
 }
 /*+++++++++++++++++NEWLETTER+++++++++++++++++++++++*/
 .patrocinadores{
-
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -432,5 +493,271 @@ footer p{
 }
 .redes i{
 	margin: 0 10px;
+}
+/*+++++++++++++++ PAGINA GRUPOS ++++++++++++++++++++++++*/
+.bandasPag{
+	padding: 0 0px;
+	width:100%; 
+}
+.grupo{
+	margin-top: 40px;
+	height: 820px;
+	width: 100%; 
+	position: relative;
+}
+.grupoimg{
+	height:300px;
+	width: 100%;
+	background-color: tomato;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.text p, .text h2{
+		margin: 20px 20px;
+}
+.text p{
+	font-size: 18px;
+}
+.seccionBanda, {
+	width: 100%;
+	text-align: center;
+	margin: 50px 0 20px 0px;
+	font-size: 26px;
+	text-transform: uppercase;
+	
+}
+.bandaBoton{
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	width: 220px;
+	height: 60px;
+	border: black 1px solid;
+	font-size: 20px;
+	background-color: black;
+	color:white;
+}
+.grupoimg img{
+	height: 100%;
+	width: 100%;
+}
+/*++++++++++++++++ ENTRADAS ++++++++++++++++++++++++++++++*/
+.entradas h2{
+	margin-top: 50px;
+	text-align: center;
+	font-size: 26px;
+	text-transform: uppercase;
+}
+.description{
+	font-size: 18px;
+	margin: 20px 0 0 0;
+}
+
+.pack,.dias,.concierto{
+	width: 100%;
+	height: 800px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px 20px;
+	text-align: left;
+	
+}
+.packimg, .diaimg, .conciertoimg{
+	height: 200px;
+	width: 100%;
+	background-size: cover;
+	background-position: top center;	
+}
+.packimg{
+	background-image: url('../img/camping.jpg');
+}
+.diaimg{
+	background-image: url('../img/camping2.jpg');	
+}
+.conciertoimg{
+	background-image: url('../img/camping.jpg');	
+}
+.precio{
+	margin: 20px 0 30px 0;
+	font-size: 30px !important;
+	font-weight: 600;
+}
+.cantidad{
+	width: 70%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0 auto 20px auto;
+}
+.menor, .mayor{
+	height: 50px;
+	width: 40px;
+	font-size: 30px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.numero{
+	width: 100px;
+	height: 50px;
+	display: flex;
+	font-size: 30px;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid black;
+}
+.entradaboton, .bandaBoton{
+	height: 60px;
+	width: 220px;
+	background-color: black;
+	color: white;
+	border: none;
+	margin: 0 auto;
+	cursor: pointer;
+}
+/*+++++++++++++++ PAGINA ARTISTA ++++++++++++++++++++++++*/
+.cabecera {
+	height: 600px;
+	width: 100%;
+	background-position: top center;
+	background-size: cover;
+}
+
+.cabeceralove{
+	background-image: url('../img/bandas/LoveOfLesbian.webp');
+}
+.cabeceralori{
+	background-image: url('../img/bandas/LoryMeyers2.jpg');
+}
+.cabeceratriangulo{
+	background-image: url('../img/bandas/Triangulo2.webp');
+		background-position: center;
+}
+.cabecerabelle{
+	background-image: url('../img/bandas/belle.jpg');
+	background-position: 80% 30%;
+}
+.cabeceravetusta{
+	background-image: url('../img/bandas/vetusta2.webp');
+	background-position: 80% 20%;
+}
+.cabeceraparcels{
+	background-image: url('../img/bandas/parcels2.jpg');
+}
+.cabeceraiseo{
+background-image: url('../img/bandas/iseo.jpg');
+	background-position: 80% 30%;
+}
+.cabecerabig{
+	background-image: url('../img/bandas/bigmon2.jpg');
+}
+.cabecerakostrok{
+	background-image: url('../img/bandas/Kostrok2.jpg');
+	background-position: 80% 40%;
+}
+.cabeceraspring{
+	background-image: url('../img/bandas/spring2.jpg');
+}
+.cabecerastreet{
+	background-image: url('../img/bandas/mani2.jpg');
+	background-position: 80% 8%;
+}
+.cabeceramew{
+	background-image: url('../img/bandas/mew2.jpg');
+	background-position: 80% 10%;
+}
+.cabeceraocellot{
+	background-image: url('../img/bandas/ocellot2.jpg');
+	background-position: 80% 30%;
+}
+.cabeceravulcano{
+	background-image: url('../img/bandas/nuevavulcano.jpg');
+	background-position: 80% 20%;
+}
+.cabeceranudo{
+	background-image: url('../img/bandas/nudozurdo2.jpg');
+	background-position: 80% 10%;
+}
+.cabeceramatt{
+	background-image: url('../img/bandas/matt.jpg');
+	background-position: 80% 20%;
+}
+.cabeceratoundra{
+	background-image: url('../img/bandas/toundra2.jpg');
+	background-position: 80% 40%;
+}
+.descripcion{
+	height: 900px;
+	width: 100%;
+	background-color: black;
+	padding: 20px 5%;
+}
+.descripcion .nombre{
+font-size: 18px;
+	color:#BABABA;
+}
+.descripcion h2{
+	font-size: 30px;
+	color: white;
+}
+.texto{
+	font-size: 14px;
+	line-height: 24px;
+	margin: 20px 0;
+	width: 100%;
+	color: white;
+}
+.seccionMusica{
+	width: 100%;
+	background-color:black;
+}
+.fondoMusica{
+	height: 600px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center
+}
+.musica{
+	width: 100%;
+	height: 515px;
+}
+.musica iframe{
+	width: 100%;
+	height: 100%;
+}
+.seccionCancion{
+	padding: 0 5%;
+	height: 500px;
+	width: 100%;
+}
+.seccionCancion .nombre{
+	color:#BABABA;
+	font-size: 18px;
+}
+.raya2{
+	height: 10px;
+	width: 80px;
+	background-color: white;
+}
+.seccionCancion h2{
+	font-size: 40px;
+	color:white;
+}
+.contenSepa{
+	background-color: black;
+	padding: 100px 0;
+
+}
+.separador{
+	height: 1px;
+	background-color: white;
+	width: 100%;
+
 }
 }	

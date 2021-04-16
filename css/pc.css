@@ -7,7 +7,9 @@
  	/*background-color: #00E6BF;*/
  	color: #37374B;
  }
-
+.check, #burguer{
+	display: none;
+}
  h1{
  	font-family: 'Poppins', sans-serif;
  	text-transform: uppercase;
@@ -445,6 +447,7 @@ footer p{
 	background-position: top center;
 	background-size: cover;
 }
+
 .cabeceralove{
 	background-image: url('../img/bandas/LoveOfLesbian.webp');
 }
@@ -467,7 +470,7 @@ footer p{
 	background-image: url('../img/bandas/parcels2.jpg');
 }
 .cabeceraiseo{
-	background-image: url('../img/bandas/iseo2.jpg');
+background-image: url('../img/bandas/iseo.jpg');
 	background-position: 80% 30%;
 }
 .cabecerabig{
@@ -690,7 +693,6 @@ font-size: 18px;
 }
 .text{
 	padding: 20px;
-
 }
 .text p{
 		margin: 10px 0 0 0;

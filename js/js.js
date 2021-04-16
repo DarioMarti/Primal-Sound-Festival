@@ -51,3 +51,4 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 	emitEvents: true // Emit custom events
 
 });
+

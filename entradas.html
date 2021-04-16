@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  		<title>Entradas</title>
+  		<title id="titulo">Entradas</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="red">
     <link rel="icon" sizes="192x192" href="img/icon.png">
@@ -21,20 +21,21 @@
 <!--+++++++++++++++++++++++++ Hojas de estilo +++++++++++++++++++++++++-->
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/pc.css">
+<link rel="stylesheet" type="text/css" href="css/movil.css">
 </head>
 <body id="body">
 	
-	<header class="header" >
+	<header class="header" id="header">
 		<div class="logo"><a href="index.html">
 		<h1>PRIMAL</h1>
 		<h1>MOOD</h1>
 		</a>
 		</div>
 		<nav>
-			<li id="entradas"><a href="" class="bordefijo">Entradas<div class="borde bordefijo"></div></a></li>
-			<li id="Bandas"><a href="bandas.html">Bandas<div class="borde"></div></a></li>
+			<li id="entradas"><a href="entradas.html">Entradas<div class="borde"></div></a></li>
+			<li id="Bandas"><a data-scroll href="bandas.html">Bandas<div class="borde"></div></a></li>
 			<li id="ElFestival"><a href="festival.html">El festival<div class="borde"></div></a></li>
-		<li id="Info"><a href="info.html">Información<div class="borde"></div></a></li>
+			<li id="Info"><a href="info.html">Información<div class="borde"></div></a></li>
 			<li id="Contacto"><a href="contacto.html">Contacto<div class="borde"></div></a></li>
 		</nav>
 		<div class="opciones">
@@ -43,13 +44,13 @@
 		</div>
 
 	</header>
-	<input type="text" name="franjaBuscador" class="franjaBuscador" id="franjaBuscador" placeholder="Buscar"> >
+	<input type="text" name="franjaBuscador" class="franjaBuscador" id="franjaBuscador" placeholder="Buscar">
 	<section class="entradas">
 		<h2>Escoge tu entrada</h2>
 		<div class="pack">
 			<div class="packimg "></div>
 			<div class="entradatexto">
-				<p>Consigue tu entrada completa para el festival y disfruta de los 4 días de dura el festival. Con la entrada completa tienes acceso gratuito a las taquillas entre otros beneficios. Si tu plan es disfrutar del festival el mayor tiempo posible, esta es tu entrada.</p>
+				<p class="description">Consigue tu entrada completa para el festival y disfruta de los 4 días de dura el festival. Con la entrada completa tienes acceso gratuito a las taquillas entre otros beneficios. Si tu plan es disfrutar del festival el mayor tiempo posible, esta es tu entrada.</p>
 				<p class="precio">100 €</p>
 			</div>
 			<ul class="cantidad">
@@ -62,7 +63,7 @@
 		<div class="dias">
 			<div class="diaimg "></div>
 			<div class="entradatexto">
-				<p>¿Solo tienes un día para escaparte a darlo todo escuchando buena música?. Este es tu pack ideal. Ahorra dinero con esta entrada y gasta unicamente por los días que vas a poder disfrutar.</p>
+				<p class="description">¿Solo tienes un día para escaparte a darlo todo escuchando buena música?. Este es tu pack ideal. Ahorra dinero con esta entrada y gasta unicamente por los días que vas a poder disfrutar.</p>
 				<p class="precio">40 €</p>
 			</div>
 			<ul class="cantidad">
@@ -75,7 +76,7 @@
 		<div class="concierto">
 			<div class="conciertoimg "></div>
 			<div class="entradatexto">
-				<p>Si no dispones de tiempo suficiente para pasar todo el día de concierto, esta es tu entrada. Ven, disfruta del concierto que quieras y del buen ambiente del festival sin que te suponga un gran desembolso.</p>
+				<p class="description">Si no dispones de tiempo suficiente para pasar todo el día de concierto, esta es tu entrada. Ven, disfruta del concierto que quieras y del buen ambiente del festival sin que te suponga un gran desembolso.</p>
 				<p class="precio">25 €</p>
 			</div>
 			<ul class="cantidad">

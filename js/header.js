@@ -12,3 +12,7 @@ function headercolor(){
 		cabecera.style.backgroundColor="transparent";
 	}
 }
+
+/*NOMBRE FICHERO*/
+var nombre = document.getElementById('titulo').text;
+console.log(nombre);
