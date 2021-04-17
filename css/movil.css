@@ -21,9 +21,11 @@ nav{
 	height: 800px;
 	background-color: rgba(0,0,0,1);
 	text-align: center;
+	padding: 150px 10%;
 	display: flex;
+
 	flex-direction: column;
-	justify-content: center;
+
 
 }
 nav a{
@@ -36,9 +38,7 @@ nav li{
 .check:checked ~ nav{
 	left: 0;
 	transition: 1.6s;
-
 }
-
 .check:not(:checked)~ nav{
 	left: -500px;
 	transition: 1.5s;
@@ -46,7 +46,7 @@ nav li{
 
 #burguer{
 	padding-top: 5px;
-	top:0px;
+	top:5px;
 	right: 40px;
 	position: absolute;
 	z-index: 10;
@@ -61,10 +61,10 @@ nav li{
 	border: 0;
 
 }
-.opciones i, .opciones p{
+.opciones{
 	display: none;
-
 }
+
 /*++++++++++++++++HOME+++++++++++++++*/
 .header{
 	background-color: black;
@@ -73,13 +73,13 @@ nav li{
 	display: flex;
 	align-items: center;
 	color: white;
-	height: 60px;
+	height: 70px;
 	width: 100%;
 	margin-bottom: 400px;
 	padding: 0 40px;
 }
 .logo{
-		z-index: 10;
+	z-index: 10;
 	width: 50%;
 	font-size: 12px;
 	line-height: 25px;
@@ -88,19 +88,30 @@ nav li{
 	color:white;
 }
 
-.opciones{
+
+.barrafooter{
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	position: fixed;
+	bottom: 0;
+	z-index: 1000;
 	display: flex;
-	justify-content: flex-end;
-	font-size: 18px;
-	width: 50%;
+	justify-content: space-around;
+	align-items: center;
 }
+.barrafooter a{
+		font-size: 32px;
+	color: white;
+}
+/*
 .idioma{
 	display: flex;
 	justify-content: space-between;
 }
 .idioma p{
 		margin: 0 0 0 20px;
-}
+}*/
 .cabeceraInd{
 	position: absolute;
 	top: 0;

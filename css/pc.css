@@ -7,6 +7,9 @@
  	/*background-color: #00E6BF;*/
  	color: #37374B;
  }
+ .barrafooter{
+ 	display: none;
+ }
 .check, #burguer{
 	display: none;
 }
@@ -54,15 +57,33 @@
 nav li:hover a .borde{
 		transition: .7s;
 	width: 100%;
+}/*++++++++++++++++++ PERFIL ++++++++++++++++*/
+
+.perfilPc a{
+	text-align: right;
+	color: white;
+	text-transform:lowercase;
 }
+
+
+/*++++++++++++++++++ OPCIONES ++++++++++++++++*/
  .opciones{
  	/*	background-color: orange;*/
  	width: 25%;
  	display: flex;
  	justify-content: center;
- 	font-size: 16px;
+ 	font-size: 18px;
  	color:white;
  }
+.opciones div{
+	margin: 0 20px;
+}
+.cesta a{
+
+	color: white;
+	cursor: pointer;
+}
+ /*
  .opciones .idioma{
  	display: flex;
  	margin: 0 30px;
@@ -72,7 +93,7 @@ nav li:hover a .borde{
  }
  .cat,.esp{
  	cursor: pointer;
- }
+ }*/
  #buscador{
  	cursor: pointer;
  }
