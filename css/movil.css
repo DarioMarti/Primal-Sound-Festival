@@ -129,15 +129,15 @@ aside{
 	overflow-y: scroll;
 }
 .bandaSlider {
-	height: 100px;
-	width: 130px;
+	height: 200px;
+	width: 240px;
 	
 }
 #slider{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 
-	width: 300vw;
+	width: 500%;
 
 }
 aside::-webkit-scrollbar{
@@ -149,7 +149,7 @@ aside::-webkit-scrollbar{
 }
 .bandaSlider .cuadro img{
 	border-radius: 10px;
-	width: 100px;
+	width: 150px;
 	height: 100%;
 }
 .tituloBanda{
