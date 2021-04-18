@@ -130,14 +130,16 @@ aside{
 }
 .bandaSlider {
 	height: 200px;
-	width: 240px;
-	
+	width: 170px;
+	overflow: hidden;
+	border-radius: 20px;
 }
 #slider{
 	display: flex;
 	justify-content: space-between;
+	width:550%;
 
-	width: 500%;
+	
 
 }
 aside::-webkit-scrollbar{
@@ -146,10 +148,10 @@ aside::-webkit-scrollbar{
 .bandaSlider .cuadro{
 	overflow: hidden;
 	height: 100%;
+	background-color: red;
 }
 .bandaSlider .cuadro img{
-	border-radius: 10px;
-	width: 150px;
+	
 	height: 100%;
 }
 .tituloBanda{
