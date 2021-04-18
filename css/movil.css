@@ -107,7 +107,6 @@ nav li{
 	color:white;
 }
 
-
 .barrafooter{
 	width: 100%;
 	height: 80px;
@@ -123,6 +122,53 @@ nav li{
 		font-size: 32px;
 	color: white;
 }
+aside{
+	padding: 0 20px;
+	height: 200px;
+	width: 100%;
+	overflow-y: scroll;
+}
+.bandaSlider {
+	height: 100px;
+	width: 130px;
+	
+}
+#slider{
+	display: flex;
+	justify-content: space-around;
+
+	width: 300vw;
+
+}
+aside::-webkit-scrollbar{
+	display: none;
+}
+.bandaSlider .cuadro{
+	overflow: hidden;
+	height: 100%;
+}
+.bandaSlider .cuadro img{
+	border-radius: 10px;
+	width: 100px;
+	height: 100%;
+}
+.tituloBanda{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	margin: 70px 0 20px 0;
+}
+section h1{
+	font-size: 20px;
+	text-align: center;
+	overflow-y: scroll;
+}
+section p{
+	color: red;
+	font-size: 14px;
+
+}
 /*
 .idioma{
 	display: flex;
@@ -130,7 +176,7 @@ nav li{
 }
 .idioma p{
 		margin: 0 0 0 20px;
-}*/
+}*//*
 .cabeceraInd{
 	position: absolute;
 	top: 0;
@@ -354,10 +400,10 @@ width: 220px;
 	color:white;
 }*/
 .seccionPc{
-	display: none;
+display: none;
 }
 .foter{
-	background-color: red;
+
 	display: none;
 }
 /*+++++++++++++++++TICKETS+++++++++++++++++++++++*/
