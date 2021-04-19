@@ -132,7 +132,7 @@ aside{
 	height: 200px;
 	width: 140px;
 	overflow: hidden;
-	border-radius: 20px;
+	border-radius: 10px;
 }
 #slider{
 	display: flex;
@@ -166,9 +166,70 @@ section h1{
 	text-align: center;
 	overflow-y: scroll;
 }
-section p{
+section .tituloBanda p{
 	color: red;
 	font-size: 14px;
+}
+/*++++++++++++++++++POST+++++++++++++++++++++*/
+.post{
+	height: 800px;
+	padding: 10px;
+	margin: 30px 10px 20px 10px;
+
+}
+.user{
+	height: 50px;
+	width: 100%;
+
+	display: flex;
+
+}
+.user img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: red;
+}
+.nombre p{
+	font-size: 20px;
+	margin-left: 20px;
+	color: black;
+	font-weight: 600;
+}
+.textoPost{
+	margin:15px 0;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+}
+.post .foto{
+	height: 200px;
+	width: 100%;
+	background-image: url('../img/user/15.jpg');
+	background-position: 60% 20%;
+	background-size: cover;
+}
+	overflow: hidden;
+}
+.foto img{
+	width: 100%;
+}
+.action{
+	margin: 5px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.action i{
+	font-size: 16px;
+	margin-right: 15px;
+}
+.like{
+	display: flex;
+}
+.like p{
+	font-size: 14px;
+	margin-left:  10px;
 
 }
 /*
