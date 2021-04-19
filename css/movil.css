@@ -218,8 +218,6 @@ section .tituloBanda p{
 	background-color: black;
 	border-radius: 50%;
 	margin: 5px 5px;
-
-}
 }
 .foto img{
 	width: 100%;
@@ -231,8 +229,8 @@ section .tituloBanda p{
 	align-items: center;
 }
 .action i{
-	font-size: 22px;
-	margin-right: 15px;
+	font-size: 26px;
+	margin-right: 25px;
 }
 .like{
 	display: flex;
