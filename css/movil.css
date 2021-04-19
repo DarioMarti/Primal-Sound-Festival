@@ -130,25 +130,25 @@ aside{
 }
 .bandaSlider {
 	height: 200px;
-	width: 170px;
+	width: 140px;
 	overflow: hidden;
 	border-radius: 20px;
 }
 #slider{
 	display: flex;
-	justify-content: space-between;
 	width:520%;
-
-	
-
 }
 aside::-webkit-scrollbar{
 	display: none;
+}
+.bandaSlider{
+			margin-right:  20px;
 }
 .bandaSlider .cuadro{
 	overflow: hidden;
 	height: 100%;
 	background-color: red;
+
 }
 .bandaSlider .cuadro img{
 	
