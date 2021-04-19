@@ -130,13 +130,13 @@ aside{
 }
 .bandaSlider {
 	height: 200px;
-	width: 140px;
+	width: 240px;
 	overflow: hidden;
 	border-radius: 10px;
 }
 #slider{
 	display: flex;
-	width:520%;
+	width:420%;
 }
 aside::-webkit-scrollbar{
 	display: none;
