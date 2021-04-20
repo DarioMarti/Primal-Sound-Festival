@@ -119,8 +119,24 @@ nav li{
 	align-items: center;
 }
 .barrafooter a, #buscadorMovil{
-		font-size: 32px;
+		font-size: 28px;
 	color: white;
+}
+.barrafooter .home{
+
+	height: 85px;
+	width: 85px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: 8px solid white;
+}
+.barrafooter .home:hover{
+
+	background-color: red;
+
+	border:12px solid white;
 }
 aside{
 	padding: 0 20px;
@@ -170,9 +186,13 @@ section .tituloBanda p{
 	color: red;
 	font-size: 14px;
 }
+.seccionMovil{
+	margin-bottom: 150px;
+}
 /*++++++++++++++++++POST+++++++++++++++++++++*/
 .post{
-	height: 800px;
+	background-color: #F3F3F3;
+	border-radius: 10px;
 	padding: 10px;
 	margin: 30px 10px 20px 10px;
 }
