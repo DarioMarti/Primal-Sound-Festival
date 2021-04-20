@@ -175,7 +175,8 @@ aside::-webkit-scrollbar{
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 20px;
-	margin: 70px 0 20px 0;
+	margin: 90px 0 20px 0;
+
 }
 section h1{
 	font-size: 20px;
@@ -188,13 +189,14 @@ section .tituloBanda p{
 }
 .seccionMovil{
 	margin-bottom: 150px;
+
 }
 /*++++++++++++++++++POST+++++++++++++++++++++*/
 .post{
 	background-color: #F3F3F3;
 	border-radius: 10px;
 	padding: 10px;
-	margin: 30px 10px 20px 10px;
+	margin: 50px 10px 20px 10px;
 }
 .user{
 	height: 50px;
