@@ -1,4 +1,70 @@
 @media screen and (max-width: 480px){
+
+.inicioMovil{
+	background-image: url('../img/Background_inicio.jpg');
+	height:100vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+.inicioMovil div{
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(0,0,0,.5);
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto
+	width: 90%;
+	height: 100vh;
+}
+
+.nombreUser,.correo{
+	margin: 10px auto;
+	padding: 0 20px;
+	height: 40px;
+	width: 80%;
+	border-radius: 50px;
+}
+.entrar, .login, .registrar {
+	margin: 20px auto;
+	height: 40px;
+	border-radius: 50px;
+	width: 80%;
+	background-color: black;
+	border: none;
+	color:white;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+.login{
+	background-color: red;
+}
+.registrar{
+	background-color: blue;
+	margin-top: 0px;
+}
+.inicioMovil span{
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+}
+.inicioMovil p{
+	font-size: 12px;
+	color: white;
+	width: 95%;
+	margin: 0 auto;
+}
+.inicioMovil .regis{
+	color:#b3b3b3;
+	margin-left: -30px;
+	font-size: 12px;
+} 
+.regis a{
+		text-transform: lowercase;
+	color: #b3b3b3;
+}
+/*++++++++++++++++++++++++++++INDEX++++++++++++++++*/
 #contador{
 	display: none;
 }
@@ -164,10 +230,8 @@ aside::-webkit-scrollbar{
 	overflow: hidden;
 	height: 100%;
 	background-color: red;
-
 }
 .bandaSlider .cuadro img{
-	
 	height: 100%;
 }
 .tituloBanda{
@@ -176,7 +240,6 @@ aside::-webkit-scrollbar{
 	align-items: center;
 	padding: 0 20px;
 	margin: 90px 0 20px 0;
-
 }
 section h1{
 	font-size: 20px;
