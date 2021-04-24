@@ -86,7 +86,8 @@ progress{
 	text-align:left;
 	float:left;
 	font-size: 12px;
-	color: #6c5ce7;
+	color: white;
+	font-weight: 200;
 
 }
 .buttonsPlay{
@@ -95,8 +96,8 @@ progress{
 	height: 50px;
 }
 .buttonsPlay svg{
-margin: 0 20px;
-font-size: 30px;
+margin: 40px 20px;
+font-size: 40px;
 }
 .AbrirVolumen{
 	float: right;
@@ -192,11 +193,13 @@ z-index: 30;
 	justify-content: center;
 	align-items: center;
 	text-align:right;
-	color: #6c5ce7;
+	color: white;
 	margin-bottom:20px;
 }
 #currentPlay{
-	color: #6c5ce7
+	color: white;
+	font-weight: 200;
+	font-size: 16px;
 }
 h3{
 	padding-top: 40px;
@@ -291,7 +294,7 @@ li:hover, svg:hover {
 	color: black;
 }
 li.active{
-	color: #6c5ce7;
+	color: white;
 }
 #controls{
 	border: 1px #eee solid;
@@ -302,7 +305,7 @@ li.active{
 }
 
 svg{
-	color: #6c5ce7
+	color: white;
 }
 
 progress{
@@ -319,7 +322,7 @@ progress{
 	left:0px;
 	text-align:left;
 	float:left;
-	color: #6c5ce7;
+	color: white;
 }
 .volumen{
 	width:100%;
@@ -330,11 +333,11 @@ progress{
 	right:0px;
 	text-align:right;
 	float:left;
-	color: #6c5ce7;
+	color: white;
 	margin-bottom:20px;
 }
 #currentPlay{
-	color: #6c5ce7
+	color: white;
 }
 h3{
 	margin-top: 30px;
