@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reproductor de música JavaScript</title>
+	<link href="css/Reproductor.css" rel="stylesheet"> <!--load all styles -->
+	<link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+	<script defer src="fontawesome/js/all.js"></script> <!--load all styles -->
+
+</head>
+<body>
+	<!-- 
+		Autor: Obed Alvarado
+		Web: obedalvarado.pw
+		Mail: info@obedalvarado.pw
+	-->
+	<audio id="player" ontimeupdate="updateProgress();">
+		<source  id="source">	
+		Audio no soportado	
+	</audio>
+	
+	<div id="controls">
+		<div class="opciones">
+
+			<div class="menu">
+				<i class="fas fa-chevron-down flechalist" id="flechalist"></i>
+				<p>Tu librería</p>
+				<i class="fas fa-ellipsis-h"></i>
+			</div>
+		</div>
+		 <input type="checkbox" class="checkNav"><!--casilla chequeado-->
+		<nav>
+		
+			<li id="entradas"><a href="entradas.html">Entradas<div class="borde"></div></a></li>
+			<li id="Bandas"><a data-scroll href="bandas.html">Bandas<div class="borde"></div></a></li>
+			<li id="ElFestival"><a href="festival.html">El festival<div class="borde"></div></a></li>
+			<li id="Info"><a href="info.html">Información<div class="borde"></div></a></li>
+			<li id="Contacto"><a href="contacto.html">Contacto<div class="borde"></div></a></li>
+		</nav>
+		<div class="portadaDisco" id="portadaDisco"></div>
+		
+		
+		<br>
+		<span id="currentPlay"></span><br>
+		<div class="progreso">
+		<div class="timer" id="timer"></div>
+		<progress id="progress" class="barraStyle" value="0" max="100" ></progress>
+
+		<i class="fas fa-volume-up AbrirVolumen" id="AbrirVolumen"></i>
+		</div>
+		<div class="controles">
+			<div class="buttonsPlay">
+				<i class="fas fa-backward " onclick="prevMusic();"></i>
+			<i class="fas fa-play" onclick="togglePlay();" id="iconPlay"></i> 
+			<i class="fas fa-forward" onclick="nextMusic();"></i>
+
+			</div>
+			<input type="checkbox" class="checkVol">
+			<div class="volumen" id="volumen">
+				<input type="range" name="volumen" id="volumen" min="0" max="1" step="0.01" value="0.75"> 
+			</div>
+		</div>
+		<input type="checkbox" class="checkflech">
+		<div class="lista" id="lista">
+		<h3>Mi música</h3>
+		<div id="playList"></div>
+		</div>
+	
+	
+	
+	</div>
+	</div>
+
+	
+	
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
