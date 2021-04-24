@@ -53,6 +53,10 @@
 		<progress id="progress" class="barraStyle" value="0" max="100" ></progress>
 		<i class="fas fa-volume-up AbrirVolumen" id="AbrirVolumen"></i>
 		</div>
+		<input type="checkbox" class="checkVol">
+			<div class="volumen" id="volumen">
+				<input type="range" name="volumen" id="volumen" min="0" max="1" step="0.01" value="0.75"> 
+			</div>
 		<div class="controles">
 			<div class="buttonsPlay">
 				<i class="fas fa-backward " onclick="prevMusic();"></i>
@@ -60,10 +64,7 @@
 			<i class="fas fa-forward" onclick="nextMusic();"></i>
 
 			</div>
-			<input type="checkbox" class="checkVol">
-			<div class="volumen" id="volumen">
-				<input type="range" name="volumen" id="volumen" min="0" max="1" step="0.01" value="0.75"> 
-			</div>
+			
 		</div>
 		<input type="checkbox" class="checkflech">
 		<div class="lista" id="lista">
