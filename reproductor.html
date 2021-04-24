@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Reproductor de música JavaScript</title>
+  		<title id="titulo">Reproductor</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" sizes="192x192" href="img/icon.png">
+    <link rel="icon" sizes="512x512" href="img/icon.jpg">
+    <meta name="theme-color" content="black">
+    <meta name="msapplication-navbutton-color" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/Reproductor.css" rel="stylesheet"> <!--load all styles -->
 	<link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
-	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+	 <!--load all styles -->
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-	<script defer src="fontawesome/js/all.js"></script> <!--load all styles -->
-
+	<script defer src="fontawesome/js/all.js"></script>
 </head>
 <body>
-	<!-- 
-		Autor: Obed Alvarado
-		Web: obedalvarado.pw
-		Mail: info@obedalvarado.pw
-	-->
+
 	<audio id="player" ontimeupdate="updateProgress();">
 		<source  id="source">	
 		Audio no soportado	
@@ -24,7 +28,6 @@
 	
 	<div id="controls">
 		<div class="opciones">
-
 			<div class="menu">
 				<i class="fas fa-chevron-down flechalist" id="flechalist"></i>
 				<p>Tu librería</p>
@@ -33,7 +36,6 @@
 		</div>
 		 <input type="checkbox" class="checkNav"><!--casilla chequeado-->
 		<nav>
-		
 			<li id="entradas"><a href="entradas.html">Entradas<div class="borde"></div></a></li>
 			<li id="Bandas"><a data-scroll href="bandas.html">Bandas<div class="borde"></div></a></li>
 			<li id="ElFestival"><a href="festival.html">El festival<div class="borde"></div></a></li>
@@ -44,11 +46,11 @@
 		
 		
 		<br>
-		<span id="currentPlay"></span><br>
+		<span id="currentPlay"></span>
+		<br>
 		<div class="progreso">
 		<div class="timer" id="timer"></div>
 		<progress id="progress" class="barraStyle" value="0" max="100" ></progress>
-
 		<i class="fas fa-volume-up AbrirVolumen" id="AbrirVolumen"></i>
 		</div>
 		<div class="controles">
@@ -72,10 +74,6 @@
 	
 	
 	</div>
-	</div>
-
-	
-	
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
