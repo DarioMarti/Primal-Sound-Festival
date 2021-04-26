@@ -174,9 +174,10 @@ nav li{
 .logo a{
 	color:white;
 }
-.logo img{
+.logo svg{
 	width: 200px;
 	margin: 0;
+
 }
 
 .barrafooter{
