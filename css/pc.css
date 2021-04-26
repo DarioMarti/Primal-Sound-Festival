@@ -1,4 +1,5 @@
 @media screen and (min-width: 1200px){
+ .seccionMovil{display: none;}
  header{
  	display: flex;
  	justify-content: space-around;
@@ -24,6 +25,13 @@
  /*	background-color: red;*/
  	width: 25%;
  	padding: 0 150px;
+
+ 	display: flex;
+ 	justify-content: center;
+ }
+ .logo img{
+ 	width: 300px;
+
  }
  nav{
  	/*	background-color: blue;*/
