@@ -32,16 +32,18 @@
 	width: 80%;
 	background-color: #ebd785;
 	border: none;
-	color:white;
+	color:#30302f;
 	font-size: 16px;
 	text-align: center;
 	cursor: pointer;
 }
 .login{
-	background-color: red;
+	background-color: #2fa1ad;
+	color: #ebd785;
 }
 .registrar{
-	background-color: blue;
+	background-color: #c62e40;
+	color: #ebd785;
 	margin-top: 0px;
 }
 .inicioMovil span{
