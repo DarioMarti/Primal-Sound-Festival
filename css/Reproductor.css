@@ -266,7 +266,7 @@ input[type=range]::-moz-range-thumb {
 .barrafooter{
 	width: 100%;
 	height: 80px;
-	background-color: #ebd785;
+	background-color: #30302f;
 	position: fixed;
 	bottom: 0;
 	z-index: 1000;
