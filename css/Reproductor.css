@@ -96,7 +96,7 @@ progress{
 	position: fixed;
 	width: 100%;
 	height: 130px;
-	bottom: 0;
+	bottom: 80px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -110,6 +110,7 @@ font-size: 40px;
 	float: right;
 	font-size: 20px ;
 	margin: 25px 0 0 0;
+	color:#30302f;
 }
 .checkVol{
 	height: 30px;
@@ -262,6 +263,21 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer;
   -webkit-appearance: none;
 }
+.barrafooter{
+	width: 100%;
+	height: 80px;
+	background-color: #ebd785;
+	position: fixed;
+	bottom: 0;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.barrafooter div  img{
+height: 25px;
+}
 }
 
 
@@ -351,4 +367,5 @@ h3{
 	color: #2B2B2B;
 	margin:0px;
 }
+
 }
