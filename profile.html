@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  		<title id="titulo">Primal Mood Festival</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" sizes="192x192" href="img/icon.png">
+    <link rel="icon" sizes="512x512" href="img/icon.jpg">
+    <meta name="theme-color" content="black">
+    <meta name="msapplication-navbutton-color" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--+++++++++++++++++++++++++ Fuentes +++++++++++++++++++++++++-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+<!--+++++++++++++++++++++++++ iconos +++++++++++++++++++++++++-->
+<script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
+<!--+++++++++++++++++++++++++ Hojas de estilo +++++++++++++++++++++++++-->
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/pc.css">
+<link rel="stylesheet" type="text/css" href="css/movil.css">
+</head>
+<body id="body">
+	
+	<header id="header">
+		<div class="logo"><a href="inicio.html">
+		<img src="img/logo/MamoodNegro.svg">
+		</a>
+		</div>
+		 <input type="checkbox" class="check"><!--casilla chequeado-->
+		<ul id="burguer">
+			<li></li><!--BARRITA HAMBURGUESA-->
+			<li></li><!--BARRITA HAMBURGUESA-->
+			<li></li><!--BARRITA HAMBURGUESA-->
+		</ul>
+		<nav>
+		
+			<li id="entradas"><a href="entradas.html">Entradas<div class="borde"></div></a></li>
+			<li id="Bandas"><a data-scroll href="bandas.html">Bandas<div class="borde"></div></a></li>
+			<li id="ElFestival"><a href="festival.html">El festival<div class="borde"></div></a></li>
+			<li id="Info"><a href="info.html">Información<div class="borde"></div></a></li>
+			<li id="Contacto"><a href="contacto.html">Contacto<div class="borde"></div></a></li>
+		</nav>
+		<div class="opciones">
+			<div class="perfilPc"><a href="perfil.html">Login</a></div>
+			<div id="buscador"><i class="fas fa-search"></i></div>
+			<div class="cesta"><a href="cesta.html"><i class="fas fa-shopping-basket"></i></a></div>
+		</div>
+
+	</header>
+	<input type="text" name="franjaBuscador" class="franjaBuscador" id="franjaBuscador" placeholder="Buscar">
+	<div class="barrafooter">
+			<div class="usuario"><a href="profile.html"><img src="img/icon/login2.png"></a></div>
+			<div class="reproductor"><a href="reproductor.html"><img src="img/icon/music.png"></i></a></div>
+			<div class="home"><a href="inicio.html"><img src="img/icon/home2.png"></a></div>
+			<div id="buscadorMovil"><img src="img/icon/search.png"></div>
+			<div class="cesta"><a href="cesta.html"><img src="img/icon/cesta.png"></a></div>
+	</div>
+	<div class="seccionfotoProfile">
+		<div class="fotoProfile"><img src=""></div>
+		<h2>Alicia <div class="edit" id="edit"><i id="editado" class="fas fa-pencil-alt"></i></div></h2>
+		<h3>Elche</h3>
+	</div>
+
+	<div class="datosProfile">
+		<h3 class="sobre mí">Sobre mí</h3>
+		<p>Texto de relleno para ver como queda a la hora de rellenar los datos de usuario. No sé que mas poner pero debo de rellenar más para que quede un mínimo realista. Creo que ya está bien, lo dejo aquí.</p>
+		<h3 class="hobbies">Aficiones</h3>
+		<p>Montañismo - Natación - Escuchar música - Viajar.</p>
+		<h3 class="BandasFavoritas">Bandas Favoritas</h3>
+		<p>Vetusta Morla, Izal, El cuerteto de Nos, Los encerrados, Culmen, Iseo, White Strike, Strokes, etc..</p>
+	</div>
+
+	<div class="editarProfile" id="editarProfile">
+	<h3>Mis datos</h3>
+	<div class="seccionProfile">
+	<input type="text" name="nombre" class="textProfile" id="textProfile" placeholder ="nombre">
+	</div>
+	<div class="seccionProfile">
+<input type="text" name="City" class="CityProfile" id="cityProfile" placeholder= "Ciudad">
+	</div>
+	<div class="seccionProfile">
+<input type="textarea" name="area" class="areaProfile" id="areaProfile" placeholder="Sobre mí">
+	</div>
+	<div class="seccionProfile">
+<input type="textarea" name="hobbies" class="HobbieProfile" id="HobbieProfile" placeholder="Mis aficiones">
+	</div>
+	<div class="seccionProfile">
+<input type="textarea" name="Favoritas" class="FavoritasProfile" id="FavoritasProfile" placeholder="Bandas Favoritas">
+	</div>
+	<input type="submit" name="cambiar" class="cambiar" id="cambiar" value="Guardar">
+	</div>
+<script src="js/js.js" language="javascript"></script>
+
+</body>
+</html>
