@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+  		<title id="titulo">Primal Mood Festival</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" sizes="192x192" href="img/icon.png">
+    <link rel="icon" sizes="512x512" href="img/icon.jpg">
+    <meta name="theme-color" content="black">
+    <meta name="msapplication-navbutton-color" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--+++++++++++++++++++++++++ Fuentes +++++++++++++++++++++++++-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+<!--+++++++++++++++++++++++++ iconos +++++++++++++++++++++++++-->
+<script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
+<!--+++++++++++++++++++++++++ Hojas de estilo +++++++++++++++++++++++++-->
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/pc.css">
+<link rel="stylesheet" type="text/css" href="css/movil.css">
+</head>
+<body id="body" class="body">
+	
+	<header  class="header" id="header">
+		<div class="logo"><a href="home.html">
+		<img id="logotipo"src="img/logo/MamoodBlanco.svg">
+		</a>
+		</div>
+		 <input type="checkbox" class="check"><!--casilla chequeado-->
+		<ul id="burguer">
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<nav id="menu">
+		
+			<li id="entradas"><a class="blanco" href="entradas.html">Entradas<div class="borde"></div></a></li>
+			<li id="Bandas"><a class="blanco" data-scroll href="bandas.html">Bandas<div class="borde"></div></a></li>
+			<li id="Contacto"><a class="blanco" href="social.html"class="bordefijo">social<div class="borde "></div></a></li>
+			<li id="ElFestival"><a class="blanco" href="festival.html">El festival<div class="borde"></div></a></li>
+			<li id="Info"><a class="blanco" href="info.html">Información<div class="borde"></div></a></li>
+			<li id="Contacto"><a class="blanco" href="contacto.html">Contacto<div class="borde"></div></a></li>
+		</nav>
+			<div class="opciones">
+			<div class="perfilPcblanco"><a class="blanco" href="perfil.html">Login</a></div>
+			<div id="buscador"><i class="fas fa-search blanco"></i></div>
+			<div class="cesta"><a href="cesta.html"><i class="fas fa-shopping-basket blanco"></i></a></div>
+		</div>
+		</div>
+	</header>
+	<input type="text" name="franjaBuscador" class="franjaBuscador" id="franjaBuscador" placeholder="Buscar">
+
+	<div class="menuLateral">
+		<div class="lateralApart"><a href="profile.html"><img src="img/icon/login4.png"></a></div>
+		<div class="lateralApart"><a href="reproductor.html"><img src="img/icon/music4.png"></i></a></div>
+		<div class="lateralApart"><i class="fas fa-calendar-alt"></i></div>
+		<div class="lateralApart"><i class="fas fa-envelope"></i></div>
+		<div class="lateralApart"><i class="fas fa-adjust" id="nocturno"></i></div>
+	</div>
+	<div class="chat" id="chat">
+		<div class="contactos" id="contactos">
+		<div class="chatuser">
+			<div class="fotochat "><div class=" fotouser uno"id="uno"></div></div>
+			<div class="nombrechat"><p id="nom1"> María García Belloso</p></div>
+		</div>
+		<div class="chatuser">
+			<div class="fotochat"><div class=" fotouser dos" id="dos"></div></div>
+			<div class="nombrechat"><p id="nom2">Alba Oliver Olmedo</p></div>
+		</div>
+		<div class="chatuser">
+			<div class="fotochat"><div class=" fotouser tres" id="tres"></div></div>
+			<div class="nombrechat"><p id="nom3">Juán José Mendilizar</p></div>
+		</div>
+		<div class="chatuser">
+			<div class="fotochat"><div class=" fotouser cuatro" id="cuatro"></div></div>
+			<div class="nombrechat"><p id="nom4">Luís Nicolás Milán</p></div>
+		</div>
+		<div class="chatuser">
+			<div class="fotochat"><div class=" fotouser cinco" id="cinco"></div></div>
+			<div class="nombrechat"><p id="nom5">Nerea Rabanda Rioja</p></div>
+		</div>
+		<div class="chatuser">
+			<div class="fotochat"><div class=" fotouser seis" id="seis"></div></div>
+			<div class="nombrechat"><p id="nom6">Rosario Villalba Almansa</p></div>
+		</div>
+		<div class="chatuser">
+			<div class="fotochat"><div class=" fotouser siete" id="siete"></div></div>
+			<div class="nombrechat"><p id="nom7">María José Giraldo</p></div>
+		</div>
+		<div class="chatuser">
+			<div class="fotochat"><div class=" fotouser ocho" id="ocho"></div></div>
+			<div class="nombrechat"><p id="nom8">Esther Montero López</p></div>
+		</div>
+		<div class="chatuser">
+			<div class="fotochat"><div class=" fotouser nueve" id="nueve"></div></div>
+			<div class="nombrechat"><p id="nom9">Miguel Ángel Alcaide</p></div>
+		</div>
+		<div class="chatuser">
+			<div class="fotochat"><div class=" fotouser diez" id="diez"></div></div>
+			<div class="nombrechat"><p id="nom10">Carmen Montoro Cortijo</p></div>
+		</div>
+		<div class="chatuser">
+			<div class="fotochat"><div class=" fotouser once" id="once"></div></div>
+			<div class="nombrechat"><p id="nom11">Sergio Bernabé Sanmartin</p></div>
+		</div>
+		<div class="chatuser">
+			<div class="fotochat"><div class=" fotouser doce" id="doce"></div></div>
+			<div class="nombrechat"><p id="nom12">Ramón Barquero Picón</p></div>
+		</div>
+		<div class="chatuser">
+			<div class="fotochat"><div class=" fotouser trece" id="trece"></div></div>
+			<div class="nombrechat"><p id="nom13">Gonzalo Serra Bas</p></div>
+		</div>
+		<div class="chatuser">
+			<div class="fotochat"><div class=" fotouser catorce" id="catorce"></div></div>
+			<div class="nombrechat"><p id="nom14">Josep Figueras Londoño</p></div>
+		</div>
+		</div>
+		<div class="chatuserOpen">
+			<div><i class="fas fa-comment abrirchat" id="abrirchat"></i></div>
+			<div><i class="fas fa-user-friends"></i></div>
+			<div><i class="fas fa-cog"></i></div>
+		</div>
+	</div>
+	<div class="ventanachat" id="ventanachat">
+		<div class="infochat">
+			<div class="fotoinfo" id="fotoinfo"></div>
+			<p class="nombreinfo" id="nombreinfo"></p>
+		</div>
+		<div class="cuerpochat" >
+			<div id="cuerpochat"></div>
+		</div>
+		<div class="escribirchat">
+			<div class="emoji"><i class="far fa-grin-alt"></i></div>
+			<input type="text" name="mensajechat" class="mensajechat" id="mensajechat">
+			<div class="enviarmensaje" id="enviarmensaje"><i class="far fa-paper-plane"></i></div>
+		</div>
+	</div>
+<section class="social">
+		<div class="tituloBanda"><h1>Bandas</h1><p>Ver todo</p></div>
+			<aside>
+
+		<ul id="slider">
+			<div class="bandaSlider"><li class="cuadro"><a href=""><img class="historia"src="img/bandas/toundra.jpg"></a></li></div>
+			<div class="bandaSlider"><li class="cuadro"><a href=""><img class="historia"src="img/bandas/bigmon.jpg"></a></li></div>
+			<div class="bandaSlider"><li class="cuadro"><a href=""><img class="historia"src="img/bandas/kostrok2.jpg"></a></li></div>
+			<div class="bandaSlider"><li class="cuadro"><a href=""><img class="historia"src="img/bandas/nudozurdo.jpg"></a></li></div>
+			<div class="bandaSlider"><li class="cuadro"><a href=""><img class="historia"src="img/bandas/matt.jpg"></a></li></div>
+			<div class="bandaSlider"><li class="cuadro"><a href=""><img class="historia"src="img/bandas/parcels2.jpg"></a></li></div>
+			<div class="bandaSlider"><li class="cuadro"><a href=""><img class="historia"src="img/bandas/VetustaMorla.jpg"></a></li></div>
+			<div class="bandaSlider"><li class="cuadro"><a href=""><img class="historia"src="img/bandas/LoryMeyers2.jpg"></a></li></div>
+			<div class="bandaSlider"><li class="cuadro"><a href=""><img class="historia"src="img/bandas/LoveOfLesbian2.jpg"></a></li></div>
+		</ul>
+	</aside>
+	<div class="publicarPost">
+		<h2 id="pensando">¿Qué estás pensando?</h2>
+		<input type="text" name="pensar" class="publicarTexto" placeholder="Cuentanos en que estás pensando...">
+		<div class="publicar">
+		<div class="archivo">
+			<div><i class="far fa-image" id="image"></i></div>
+			<div><i class="fas fa-photo-video"id="video"></i></div>
+			<div><i class="fas fa-laugh" id="risa"></i></div>
+		</div>
+			<input type="submit" name="subir" value="enviar">
+		</div>
+	</div>
+	
+	<div class="post">
+		<div class="user">
+			<div class="nick">
+			<div class="fotousuario"><img src="img/user/6.jpg"></div>
+			<div class="nombre" ><p id="nombreMa">María Cuartero Platero</p></div>
+			</div>
+			<ul>
+				<li></li><li></li><li></li>
+			</ul>
+		</div>
+		<div class="textoPost"><p>Enganchadisima al último disco de IZAL. Iría a Mamood festival solamente por ellos. Como toquen alguna de este disco creo que me volveré loca.</div>
+		<div class="foto2">
+			<img src="">
+		</div>
+		<div class="reaccion">
+			<div class="action">
+				<div class="iconosCom">
+				<i class="far fa-heart"></i>
+				<i class="far fa-comment-dots"></i>
+				</div>
+				<div class="like"><p>Me gusta</p><p>0</p></div>
+			</div>
+			<div class="comentario"></div>
+		</div>
+	</div>
+	<div class="post">
+		<div class="user">
+			<div class="nick">
+			<div><img src="img/user/8.jpg"></div>
+			<div class="nombre"><p id="nombreCri">Cristobal Donaire Casillas</p></div>
+			</div>
+			<ul>
+				<li></li><li></li><li></li>
+			</ul>
+		</div>
+		<div class="textoPost"><p>Un día de camping con <span class="etiqueta">@MaríaPedraza </span>, disfrutando del buen tiempo que hace hasta que llegue <span class="etiqueta">#Mammodfestival.</span> ¡¡Deseando estoy de que llegue!!.</p></div>
+		<div class="foto">
+			<img src="">
+		</div>
+		<div class="reaccion">
+			<div class="action">
+				<div class="iconosCom">
+				<i class="far fa-heart"></i>
+				<i class="far fa-comment-dots"></i>
+				</div>
+				<div class="like"><p>Me gusta</p><p>0</p></div>
+			</div>
+			<div class="comentario"></div>
+		</div>
+	</div>
+	<div class="post">
+		<div class="user">
+			<div class="nick">
+			<div class="fotousuario"><img src="img/user/13.jpg"></div>
+			<div class="nombre"><p id="nombreCla">Clara Camino Gonzalez</p></div>
+			</div>
+			<ul>
+				<li></li><li></li><li></li>
+			</ul>
+		</div>
+		<div class="textoPost"><p>Cuando te enteras que <span class="etiqueta">#Arctic Monkey</span> es la nueva confirmación para el festival.</div>
+		<div class="foto4">
+			<img src="">
+		</div>
+		<div class="reaccion">
+			<div class="action">
+				<div class="iconosCom">
+				<i class="far fa-heart"></i>
+				<i class="far fa-comment-dots"></i>
+				</div>
+				<div class="like"><p>Me gusta</p><p>0</p></div>
+			</div>
+			<div class="comentario"></div>
+		</div>
+	</div>
+	<div class="post">
+		<div class="user">
+			<div class="nick">
+			<div><img src="img/user/4.jpg"></div>
+			<div class="nombre"><p id="nombreAdr">Adrian Pedrero Plaza</p></div>
+			</div>
+			<ul>
+				<li></li><li></li><li></li>
+			</ul>
+		</div>
+		<div class="textoPost"><p>Mi último festival fue hace la friolera cifra de 4 años. Así que tengo mono de salir, beber, el rollo de siempre. Aquí una foto de cuando era joven y me gustaba pasar mis días de festival.</p></div>
+		<div class="foto1">
+			<img src="">
+		</div>
+		<div class="reaccion">
+			<div class="action">
+				<div class="iconosCom">
+				<i class="far fa-heart"></i>
+				<i class="far fa-comment-dots"></i>
+				</div>
+				<div class="like"><p>Me gusta</p><p>0</p></div>
+			</div>
+			<div class="comentario"></div>
+		</div>
+	</div>
+	</section>
+
+	<footer class="foter">
+		<p>© 2020 Primal Mood Festival, Todos los derechos reservados</p>
+		<p>PrimalMoodFestival@primalmood.com</p>
+		<p>+34 924 54 86 74</p>
+		<div class="redes">
+			<i class="fab fa-facebook-square"></i>
+			<i class="fab fa-instagram-square"></i>
+			<i class="fab fa-twitter-square"></i>
+			<i class="fab fa-youtube-square"></i>
+		</div>
+	</footer>
+<script src="js/js.js" language="javascript"></script>
+<script src="js/chat.js" language="javascript"></script>
+<script src="js/Dianoche.js" language="javascript"></script>
+</body>
+</html>
+
+

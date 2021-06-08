@@ -25,9 +25,9 @@
 </head>
 <body id="body">
 	
-	<header id="header">
+	<header id="header" class="header">
 		<div class="logo"><a href="inicio.html">
-		<img src="img/logo/MamoodNegro.svg">
+		<img src="img/logo/MamoodBlanco.svg">
 		</a>
 		</div>
 		 <input type="checkbox" class="check"><!--casilla chequeado-->
@@ -38,62 +38,69 @@
 		</ul>
 		<nav>
 		
-			<li id="entradas"><a href="entradas.html">Entradas<div class="borde"></div></a></li>
-			<li id="Bandas"><a data-scroll href="bandas.html">Bandas<div class="borde"></div></a></li>
-			<li id="ElFestival"><a href="festival.html">El festival<div class="borde"></div></a></li>
-			<li id="Info"><a href="info.html">Información<div class="borde"></div></a></li>
-			<li id="Contacto"><a href="contacto.html">Contacto<div class="borde"></div></a></li>
+			<li id="entradas"><a class="blanco" href="entradas.html">Entradas<div class="borde"></div></a></li>
+			<li id="Bandas"><a class="blanco" data-scroll href="bandas.html">Bandas<div class="borde"></div></a></li>
+			<li id="ElFestival"><a class="blanco" href="festival.html">El festival<div class="borde"></div></a></li>
+			<li id="Info"><a class="blanco" href="info.html">Información<div class="borde"></div></a></li>
+			<li id="Contacto"><a class="blanco" href="contacto.html">Contacto<div class="borde"></div></a></li>
 		</nav>
 		<div class="opciones">
-			<div class="perfilPc"><a href="perfil.html">Login</a></div>
-			<div id="buscador"><i class="fas fa-search"></i></div>
-			<div class="cesta"><a href="cesta.html"><i class="fas fa-shopping-basket"></i></a></div>
+			<div class="perfilPcblanco"><a class="blanco" href="perfil.html">Login</a></div>
+			<div id="buscador"><i class="fas fa-search blanco"></i></div>
+			<div class="cesta"><a href="cesta.html"><i class="fas fa-shopping-basket blanco"></i></a></div>
 		</div>
 
 	</header>
 	<input type="text" name="franjaBuscador" class="franjaBuscador" id="franjaBuscador" placeholder="Buscar">
-	<div class="barrafooter">
-			<div class="usuario"><a href="profile.html"><img src="img/icon/login2.png"></a></div>
-			<div class="reproductor"><a href="reproductor.html"><img src="img/icon/music.png"></i></a></div>
-			<div class="home"><a href="inicio.html"><img src="img/icon/home2.png"></a></div>
-			<div id="buscadorMovil"><img src="img/icon/search.png"></div>
-			<div class="cesta"><a href="cesta.html"><img src="img/icon/cesta.png"></a></div>
-	</div>
-	<div class="seccionfotoProfile">
-		<div class="fotoProfile"><img src=""></div>
-		<h2>Alicia <div class="edit" id="edit"><i id="editado" class="fas fa-pencil-alt"></i></div></h2>
-		<h3>Elche</h3>
+		<div class="menuLateral">
+		<div class="lateralApart"><a href="profile.html"><img src="img/icon/login4.png"></a></div>
+		<div class="lateralApart"><a href="reproductor.html"><img src="img/icon/music4.png"></i></a></div>
+		<div class="lateralApart"><i class="fas fa-calendar-alt"></i></div>
+		<div class="lateralApart"><i class="fas fa-envelope"></i></div>
+		<div class="lateralApart"><i class="fas fa-adjust" id="nocturno"></i></div>
 	</div>
 
+
+	<div class="sectionProfile">
+
+	<div class="seccionfotoProfile">
+		<div class="fotoProfile" id="fotoProfile"><img id="fotiño"src=""></div>
+		<h2 ><p id="name">Alicia</p> <div class="edit" id="edit"><i id="editado" class="fas fa-pencil-alt"></i></div></h2>
+		<h3 id="ciudad">Elche</h3>
+	</div>
+	<div class="profile">
 	<div class="datosProfile">
-		<h3 class="sobre mí">Sobre mí</h3>
-		<p>Texto de relleno para ver como queda a la hora de rellenar los datos de usuario. No sé que mas poner pero debo de rellenar más para que quede un mínimo realista. Creo que ya está bien, lo dejo aquí.</p>
-		<h3 class="hobbies">Aficiones</h3>
-		<p>Montañismo - Natación - Escuchar música - Viajar.</p>
-		<h3 class="BandasFavoritas">Bandas Favoritas</h3>
-		<p>Vetusta Morla, Izal, El cuerteto de Nos, Los encerrados, Culmen, Iseo, White Strike, Strokes, etc..</p>
+		<h3 class="sobre mí" >Sobre mí</h3>
+		<p id="about">Texto de relleno para ver como queda a la hora de rellenar los datos de usuario. No sé que mas poner pero debo de rellenar más para que quede un mínimo realista. Creo que ya está bien, lo dejo aquí.</p>
+		<h3 class="hobbies" >Aficiones</h3>
+		<p id="hobbies">Montañismo - Natación - Escuchar música - Viajar.</p>
+		<h3 class="BandasFavoritas" >Bandas Favoritas</h3>
+		<p id="favorita">Vetusta Morla, Izal, El cuerteto de Nos, Los encerrados, Culmen, Iseo, White Strike, Strokes, etc..</p>
 	</div>
 
 	<div class="editarProfile" id="editarProfile">
 	<h3>Mis datos</h3>
 	<div class="seccionProfile">
-	<input type="text" name="nombre" class="textProfile" id="textProfile" placeholder ="nombre">
+	<input type="text" name="nombre" class="textProfile input" id="textProfile" placeholder ="nombre">
 	</div>
 	<div class="seccionProfile">
-<input type="text" name="City" class="CityProfile" id="cityProfile" placeholder= "Ciudad">
+<input type="text" name="City" class="CityProfile input" id="cityProfile" placeholder= "Ciudad">
 	</div>
 	<div class="seccionProfile">
-<input type="textarea" name="area" class="areaProfile" id="areaProfile" placeholder="Sobre mí">
+<input type="textarea" name="area" class="areaProfile input" id="areaProfile" placeholder="Sobre mí">
 	</div>
 	<div class="seccionProfile">
-<input type="textarea" name="hobbies" class="HobbieProfile" id="HobbieProfile" placeholder="Mis aficiones">
+<input type="textarea" name="hobbies" class="HobbieProfile input" id="hobbiePro" placeholder="Mis aficiones">
 	</div>
 	<div class="seccionProfile">
-<input type="textarea" name="Favoritas" class="FavoritasProfile" id="FavoritasProfile" placeholder="Bandas Favoritas">
+<input type="textarea" name="Favoritas" class="FavoritasProfile input" id="favoritasProfile" placeholder="Bandas Favoritas">
 	</div>
+	<div class="botonfile"><p>Subir foto</p><input type="file" name="file" id="file"></div>
 	<input type="submit" name="cambiar" class="cambiar" id="cambiar" value="Guardar">
 	</div>
-<script src="js/js.js" language="javascript"></script>
+</div>
+
+<script src="js/profile.js" language="javascript"></script>
 
 </body>
 </html>

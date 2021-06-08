@@ -1,5 +1,5 @@
 @media screen and (min-width: 1200px){
- .seccionMovil{display: none;}
+
  header{
  	display: flex;
  	justify-content: space-around;
@@ -8,9 +8,7 @@
  	/*background-color: #00E6BF;*/
  	color: #37374B;
  }
- .barrafooter{
- 	display: none;
- }
+
 .check, #burguer{
 	display: none;
 }
@@ -30,11 +28,10 @@
  	justify-content: center;
  }
  .logo img{
- 	width: 300px;
+ 	width: 200px;
 
  }
  nav{
- 	/*	background-color: blue;*/
  	width: 50%;
  	display: flex;
  	justify-content: space-around;
@@ -43,7 +40,7 @@
  }
  nav a{
  	position: relative;
- 	color:white;
+ 	color:black;
  	font-weight: 500;
  }
 
@@ -52,7 +49,7 @@
  	bottom: -6px;
  	height: 4px;
  	width: 0%;
- 	background-color: #F6E399;
+ 	background-color: #ebd785;
  	transition: .7s;
  } 
  .bordefijo{
@@ -60,19 +57,33 @@
  	 color: #F6E399;
  }
  nav li:hover a{
-	color:#F6E399;
+	color:#c62e40;
 }
 nav li:hover a .borde{
 		transition: .7s;
 	width: 100%;
-}/*++++++++++++++++++ PERFIL ++++++++++++++++*/
+}
+.blanco{
+	color:white;
+}
+.blanco:hover{
+	color:#ebd785;
+}
+/*++++++++++++++++++ PERFIL ++++++++++++++++*/
 
 .perfilPc a{
+	text-align: right;
+	color: black;
+	text-transform:lowercase;
+}
+.perfilPcblanco a{
 	text-align: right;
 	color: white;
 	text-transform:lowercase;
 }
-
+.perfilPc a:hover{
+	color:#c62e40;
+}
 
 /*++++++++++++++++++ OPCIONES ++++++++++++++++*/
  .opciones{
@@ -88,8 +99,11 @@ nav li:hover a .borde{
 }
 .cesta a{
 
-	color: white;
+	color: black;
 	cursor: pointer;
+}
+.cesta a:hover{
+	color:#c62e40;
 }
  /*
  .opciones .idioma{
@@ -104,6 +118,10 @@ nav li:hover a .borde{
  }*/
  #buscador{
  	cursor: pointer;
+ 	color: black;
+ }
+ #buscador:hover{
+ 	color:#c62e40;
  }
  .franjaBuscador{
  	display: none;
@@ -128,7 +146,7 @@ nav li:hover a .borde{
 	left: 0;
 	height:1000px; 
 	width:100%;
-	background-image: url('../img/5.jpg');
+	background-image: url('../img/home3.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -136,7 +154,8 @@ nav li:hover a .borde{
 #contador{
 	display: flex;
 	justify-content: center;
-	margin:200px 0;
+	margin:500px 0;
+
 }
 .simply-section{
 
@@ -151,15 +170,15 @@ nav li:hover a .borde{
 }
 .simply-amount{
 
-	font-size: 65px;
+	font-size: 95px;
 	font-weight: 700;
 	line-height: 40px;
-	color: white;
+	color: #c62e40;
 }
 .simply-word{
 	font-size: 55px;
 	font-weight: 700;
-	color:white;
+	color:#c62e40;
 }
 .contenido{
 	display: flex;
@@ -194,7 +213,7 @@ nav li:hover a .borde{
 .izq1:hover .negro,.izq2:hover .negro,.cen1:hover .negro,.cen2:hover .negro,.der1:hover .negro,.der2:hover .negro{
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0,0,0,.9);
+	background-color: rgba(198,46,64,.9);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -238,15 +257,16 @@ color: white;
 .boton button{
 	width: 200px;
 	height: 50px;
-	background-color: black;
+	background-color: #c62e40;
 	color:white;
 	margin: 0 auto;
 	cursor: pointer;
+	border:none;
 }
 .boton button:hover{
 	background-color: rgba(0,0,0,0);
-	border: 1px solid black;
-	color:black;
+	border: 1px solid #c62e40;
+	color:#c62e40;
 }
 .bandas{
 	font-size: 40px;
@@ -279,7 +299,7 @@ display: flex;
 	justify-content: center;
 	padding: 0 20%;
 	color: white;
-	background-color: rgba(0,0,0,0.9);
+	background-color: rgba(198,46,64,0.9);
 	height: 100%;
 	width: 100%;
 }
@@ -298,12 +318,12 @@ display: flex;
 .secInt button{
 width: 200px;
 	height: 50px;
-	background-color: black;
+	background-color: #c62e40;
 	color:white;
 }
 .secInt button:hover{
 	background-color: white;
-	color: black;
+	color: #c62e40;
 	cursor: pointer;
 }
 .filtro{
@@ -318,10 +338,12 @@ width: 200px;
 	background-color: rgba(0,0,0,0);
 	color:white;
 	cursor: pointer;
+
 }
 .info button:hover{
 	background-color: rgba(255,255,255,1);
 	color:black;
+	border:none;
 }
 .tickets{
 	width: 100%;
@@ -369,6 +391,7 @@ width: 200px;
 }
 .CalTitular h2{
 	font-size: 32px;
+
 }
 .CalContenido .CalConizq{
 	display: flex;
@@ -377,6 +400,7 @@ width: 200px;
 }
 .CalContenido h2{
 	font-size: 60px;
+	color:#c62e40;
 }
 .CalBanda{
 	font-size: 24px;
@@ -448,7 +472,7 @@ line-height: 90px;
 footer{
 	height: 300px;
 	width: 100%;
-	background-color: black;
+	background-color: #c62e40;
 	color: white;
 	display: flex;
 	justify-content: center;
@@ -614,10 +638,10 @@ font-size: 18px;
 }
 /*++++++++++++++++ ENTRADAS ++++++++++++++++++++++++++++++*/
 .header{
-	background-color: black;
+	background-color: #c62e40;
 }
 .entradas{
-	margin-top: 100px;
+	margin-top: 150px;
 }
 .entradas h2{
 	margin: 40px 150px;
@@ -655,11 +679,11 @@ font-size: 18px;
 	margin: 30px 0;
 	font-size: 30px;
 	font-weight: 600;
+	color:#c62e40;
 }
 .cantidad{
 	width: 150px;
 	height: 50px;
-
 	display: flex;
 	justify-content: space-between;
 }
@@ -677,23 +701,24 @@ font-size: 18px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid black;
+	border: 2px solid #c62e40;
 }
 .numero p{
 	font-size: 25px;
+	color:#c62e40;
 }
 .entradaboton, .bandaBoton{
 	height: 50px;
 	width: 150px;
-	background-color: black;
+	background-color: #c62e40;
 	color: white;
 	border: none;
 	cursor: pointer;
 }
 .entradaboton:hover, .bandaBoton:hover{
-	border: 1px solid black;
+	border: 1px solid #c62e40;
 	background-color: white;
-	color:black;
+	color:#c62e40;
 }
 
 /*+++++++++++++++ PAGINA GRUPOS ++++++++++++++++++++++++*/
@@ -754,22 +779,27 @@ font-size: 18px;
 	margin-bottom: 20px;
 }
 .cartel{
-	background-image: url('../img/cartel_prueba.jpg');
+	background-image: url('../img/cartel.png');
 	background-position: top center;
-	background-size: contain;
-	height: 65%;
+	background-size: cover;
+	height: 1000px;
 	width: 100%;
 	margin: 200px 0;
 }
 /*++++++++++++++++ INFORMACIÓN ++++++++++++++++++++++++++++++*/
+.contenmapa{
+	width: 100%;
+	background-color: red;
+
+}
 .mapa{
-	width: 50%;
-	height: 600px;
+	width: 100%;
+	height: 700px;
 	margin: 150px auto;
-	background-image: url(../img/mapa.jpg);
+	background-image: url(../img/mapa.svg);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 }
 .acampada, .taquillas, .otra{
 	width: 100%;
@@ -893,6 +923,8 @@ transition: 0s !important;
 /*++++++++++++++++ CONTACTO ++++++++++++++++++++++++++++++*/
 
 .contacto{
+	position: absolute;
+	right: 0;
 	display: flex;
 	justify-content: flex-start;
 	margin:70px 0 0px 0px;
@@ -904,8 +936,13 @@ transition: 0s !important;
 	background-size: cover;
 	background-position:  center;
 	color: white;
-}
 
+}
+.contactosabierto{
+	position: absolute;
+	top: 1000px;
+	background-color: red;
+}
 .contactoTexto{
 	display: flex;
 	justify-content: center;
@@ -953,4 +990,530 @@ border-bottom: 1px solid white;
 	background-color: white;
 	color: black;
 }
+/*++++++++++++++++ MURO ++++++++++++++++++++++++++++++*/
+aside, .tituloBanda h1, .tituloBanda p{
+	display: none;
+}
+.tituloBanda{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	margin: 90px 0 20px 0;
+}
+section h1{
+	font-size: 20px;
+	text-align: center;
+	overflow-y: scroll;
+	color: #30302f;
+}
+section .tituloBanda p{
+	color: #c62e40;
+	font-size: 14px;
+}
+.seccionMovil{
+	margin-bottom: 150px;
+
+}
+/*++++++++++++++++++ PUBLICAR POST +++++++++++++++++++++*/
+
+.publicarPost{
+	height: 140px;
+	width: 100%;
+	margin-top: 60px;
+	margin-bottom: 130px;
+}
+.publicarPost h2{
+	color: #3e3e3d;
+}
+.publicarPost .publicarTexto{
+	width: 100%;
+	height: 60px;
+	margin-top: 20px;
+	padding: 0 40px;
+	border-radius: 60px;
+	border: 1px solid #3e3e3d;
+}
+.archivo, .publicar{
+	display: flex;	
+}
+.publicar{
+	margin-top: 25px;
+}
+.archivo i{
+	margin-right:  40px;
+	font-size: 25px;
+	color: #3e3e3d;
+}
+.publicar input{
+
+	width: 120px;
+	height: 40px;
+	background-color: #c62e40;
+	color:white;
+	
+	cursor: pointer;
+	border:none;
+}
+/*++++++++++++++++++POST+++++++++++++++++++++*/
+.social{
+	width: 50%;
+	margin:0 auto;
+
+}
+.body{
+	background-color: white;
+}
+.post{
+	height: 800px;
+
+	border-radius: 10px;
+	margin: 20px 10px 20px 10px;
+}
+.user{
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nick{
+	display: flex;
+}
+.user .fotousuario{
+	display: flex;
+	align-items: center;
+}
+.user img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+
+}
+.nombre{
+	display: flex;
+	align-items: center;
+}
+.nombre p{
+	font-size: 18px;
+	margin-left: 20px;
+	color: #30302f;
+	font-weight: 600;
+}
+
+.textoPost{
+	margin:18px 0;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+}
+.etiqueta{
+	color:#00cfff;
+}
+.post .foto{
+	height: 500px;
+	width: 100%;
+	background-image: url('../img/user/15.jpg');
+	background-position: 60% 20%;
+	background-size: cover;
+}
+.post .foto1{
+	height: 500px;
+	width: 100%;
+	background-image: url('../img/fest1.jpg');
+	background-position: 60% 20%;
+	background-size: cover;
+}
+.post .foto2{
+	height: 500px;
+	width: 100%;
+	background-image: url('../img/fest3.jpg');
+	background-position: 20% 90%;
+	background-size: cover;
+}
+.post .foto4{
+		height: 500px;
+	width: 100%;
+	background-image: url('../img/gif1.gif');
+	background-position: 20% 90%;
+	background-size: cover;
+}
+.post ul{
+	display: flex;
+}
+.post ul li{
+	height: 6px;
+	width: 6px;
+	background-color: #30302f;
+	border-radius: 50%;
+	margin: 3px 3px;
+}
+.foto img{
+	width: 100%;
+}
+.action{
+	margin: 5px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.action i{
+	font-size: 26px;
+	margin-right: 25px;
+}
+.like{
+	display: flex;
+}
+.like p{
+	font-size: 14px;
+	margin-left:  10px;
+
+}
+/*++++++++++++++ BARRA LATERAL ++++++++++++++++++++++*/
+.menuLateral{
+	height:50vh;
+	width: 40px;
+
+position: fixed;
+margin-top: 100px;
+}
+.lateralApart {
+	width:60px;
+	height: 100px;
+	background-color: #c62e40;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+z-index: 999;
+}
+.lateralApart img{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+.lateralApart i{
+	font-size: 30px;
+	cursor: pointer;
+}
+.lateralApart:first-child{
+	margin-top: 10%;
+}
+/*++++++++++++++ CHAT ++++++++++++++++++++++*/
+.chat{
+	position: fixed;
+
+	bottom: 0;
+	right: 0;
+	height: 100vh;
+	width: 300px;
+
+		height: calc(100% - 100px);
+}
+.contactos{
+	width: 100%;
+
+
+
+}
+.chatuser{
+	width: 100%;
+	height: 55px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.chatuserOpen{
+		position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 55px;
+	background-color: #c62e40;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.chatuserOpen i{
+	color: white;
+	font-size: 25px;
+	cursor: pointer;
+}
+.chatuser .fotochat{
+margin: 0 20px;
+	height: 35px;
+	width: 35px;
+		overflow: hidden;
+		border-radius: 50%;
+}
+.fotochat .fotouser{
+	width: 100%;
+	height: 100%;	
+	background-size: cover;
+	background-position: center;
+}
+.uno{
+	background-image: url('../img/user/5.jpg');
+}
+.dos{
+	background-image: url('../img/user/20.jpg');
+}
+.tres{
+	background-image: url('../img/user/21.jpg');
+}
+.cuatro{
+	background-image: url('../img/user/9.jpg');
+}
+.cinco{
+	background-image: url('../img/user/10.jpg');
+}
+.seis{
+	background-image: url('../img/user/11.jpg');
+}
+.siete{
+	background-image: url('../img/user/12.jpg');
+}
+.ocho{
+	background-image: url('../img/user/13.jpg');
+}
+.nueve{
+	background-image: url('../img/user/14.jpg');
+}
+.diez{
+	background-image: url('../img/user/15.jpg');
+}
+.once{
+	background-image: url('../img/user/16.jpg');
+}
+.doce{
+	background-image: url('../img/user/17.jpg');
+}
+.trece{
+	background-image: url('../img/user/18.jpg');
+}
+.catorce{
+	background-image: url('../img/user/19.jpg');
+}
+.ventanachat2{
+	right: 340px!important;
+}
+.ventanachat{
+	position: fixed;
+	bottom: 0;
+	right: -800px;
+	height: 400px;
+	width:300px;
+	background-color: white;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	box-shadow: 0px 0px 5px black;
+	
+	
+}
+.infochat{
+	height: 50px;
+	width: 100%;
+
+	border-bottom: 2px solid #c62e40;
+	display: flex;
+	align-items: center;
+}
+.cuerpochat{
+	height: 280px;
+	width: 100%;
+
+
+}
+#fotoinfo{
+	width: 30px;
+	height: 30px;
+	background-image: url('../img/8.jpg');
+	background-position: center;
+	background-size: cover;
+		margin: 0 20px 0 10px;
+		border-radius: 50px;
+
+}
+
+.escribirchat{
+	height: 70px;
+	width: 100%;
+	background-color: #c62e40;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+
+}
+.mensajechat{
+	width: 180px;
+	height: 40px;
+	padding: 0 20px;
+	border:none;
+	border-radius: 50px;
+}
+.emoji{
+	font-size: 25px;
+	color: white;
+}
+.enviarmensaje i{
+	font-size: 25px;
+	color: white;
+}
+#cuerpochat{
+	position: absolute;
+	top: 70px;
+	right: 10px;
+	text-align: right;
+
+	font-size: 14px;
+	padding: 5px 10px;
+	border-radius: 4px;
+	line-height: 24px;
+
+}
+/*++++++++++++ MODO NOCHE ++++++++++++++*/
+.bodynoche{
+	background-color: #282726;
+	color:white;
+}
+.pensandonoche{
+	color:white!important;
+}
+.noche{
+	color: black!important;
+}
+.noche2{
+	background-color: #282726;
+}
+
+/*PROFILES*/
+
+.sectionProfile {
+	width: 50%;
+	margin: 160px auto 0 auto;
+
+}
+.seccionfotoProfile{
+	margin-top: 100px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+#fotoProfile{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-image: url('../img/user/7.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.seccionfotoProfile h2{
+	margin-top: 15px;
+	color: #30302f;
+	font-weight: 600;
+	position: relative;
+}
+.seccionfotoProfile h3{
+	margin-top: -5px;
+	color: grey;
+	font-weight: 300;
+}
+.edit{
+	position: absolute;
+	top: 5px;
+	right: -50px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.datosProfile h3{
+	text-align: left;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+.datosProfile p{
+	color: #30302f;
+	margin-bottom: 30px;
+}
+.datosProfile{
+	margin-bottom: 100px;
+}
+
+.editarProfile, .datosProfile{
+	padding: 20px;
+}
+.editarProfile{
+display: none;
+}
+.editando{
+
+	display: block;
+margin-bottom: 100px;
+}
+.editarProfile h3{
+	margin: 10px 0 30px 0;
+}
+.editarProfile div{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.editarProfile .input{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #30302f;
+	margin-bottom: 20px;
+		height: 50px;
+	border: none;
+	border-radius: 50px;
+	box-shadow: 0px 0px 5px #30302f;
+	padding: 0 20px;
+}
+#cambiar{
+	margin-top: 30px;
+	background-color: #c62e40;
+	width: 140px;
+	height: 50px;
+	color: white;
+	box-shadow: none;
+	border-radius: 0;
+	cursor: pointer;
+	margin-top: 100px;
+}
+#cambiar:hover{
+	border:1px solid #c62e40;
+	background-color: transparent;
+	color: #c62e40;
+}
+.editarProfile .botonfile{
+	width: 100%;
+	background-color: #303030;
+	position: relative;
+	padding: 10px;
+
+
+}
+.editarProfile .botonfile p{
+	
+	width: 100%;
+	color: white;
+	display: flex;
+	justify-content: center;
+
+}
+.editarProfile #file{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
 }
