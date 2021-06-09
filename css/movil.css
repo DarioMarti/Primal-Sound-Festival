@@ -335,21 +335,14 @@ section .tituloBanda p{
 	margin-left:  10px;
 
 }
-/*
-.idioma{
-	display: flex;
-	justify-content: space-between;
-}
-.idioma p{
-		margin: 0 0 0 20px;
-}*//*
+
 .cabeceraInd{
 	position: absolute;
 	top: 0;
 	left: 0;
 	height:800px; 
 	width:100%;
-	background-image: url('../img/5.jpg');
+	background-image: url('../img/home3.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
