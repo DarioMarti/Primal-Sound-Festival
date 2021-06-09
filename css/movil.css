@@ -106,17 +106,16 @@ nav{
 	left: -100%;
 	width: 100%;
 	height: 800px;
-	background-color: #ebd785;
+	background-color: #c62e40;
 	text-align: center;
 	padding: 150px 10%;
 	display: flex;
-
 	flex-direction: column;
 
 
 }
 nav a{
-		color: #30302f;
+		color: white;
 }
 nav li{
 	font-size: 24px;
@@ -151,13 +150,44 @@ nav li{
 .opciones{
 	display: none;
 }
+/*+++++++++++BARRA LATERAL +++++++++++++*/
+.menuLateral{
+	height:80px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+position: fixed;
+bottom: 0px;
+z-index: 999;
+}
+.lateralApart {
+	width:100%;
+	height: 100%;
+	background-color: #c62e40;
+
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+z-index: 99;
+}
+.lateralApart img{
+
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+}
+ .lateralApart svg{
+	font-size: 30px;
+}
 
 /*++++++++++++++++HOME+++++++++++++++*/
-.header{
-	background-color: #ebd785;
+#header #burguer  li{
+	background-color: white;
 }
 #header{
-	background-color: #ebd785;
+	background-color: #c62e40;
 	display: flex;
 	align-items: center;
 	color: white;
@@ -185,21 +215,6 @@ display: flex;
 
 }
 
-.barrafooter{
-	width: 100%;
-	height: 80px;
-	background-color: #ebd785;
-	position: fixed;
-	bottom: 0;
-	z-index: 1000;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.barrafooter div  img{
-height: 25px;
-}
 aside{
 	padding: 0 20px;
 	height: 200px;
@@ -252,7 +267,7 @@ section .tituloBanda p{
 }
 /*++++++++++++++++++POST+++++++++++++++++++++*/
 .post{
-	background-color: #fcf5d9;
+	
 	border-radius: 10px;
 	padding: 10px;
 	margin: 50px 10px 20px 10px;
@@ -271,18 +286,21 @@ section .tituloBanda p{
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
-
+}
+.nombre{
+	display: flex;
+	align-items: center;
 }
 .nombre p{
-	font-size: 20px;
+	font-size: 14px;
 	margin-left: 20px;
 	color: #30302f;
 	font-weight: 600;
 }
 
 .textoPost{
-	margin:20px 0;
-	font-weight: 500;
+	margin:18px 0;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 20px;
 }
@@ -307,12 +325,22 @@ section .tituloBanda p{
 	background-position: 20% 90%;
 	background-size: cover;
 }
+.post .foto4{
+		height: 200px;
+	width: 100%;
+	background-image: url('../img/gif1.gif');
+	background-position: 20% 90%;
+	background-size: cover;
+}
+.post ul{
+	display: flex;
+}
 .post ul li{
-	height: 7px;
-	width: 7px;
+	height: 6px;
+	width: 6px;
 	background-color: #30302f;
 	border-radius: 50%;
-	margin: 5px 5px;
+	margin: 3px 3px;
 }
 .foto img{
 	width: 100%;
@@ -347,20 +375,22 @@ section .tituloBanda p{
 	background-size: cover;
 	overflow: hidden;
 	background-position: center;
+
 }
 
 .simply-section{
-	width: 180px;
-	height: 180px;
-	margin: 0 -45px;
+	width: 100%;
+	height: 70px;
+	background-color: red;
 	border-radius: 5px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+		z-index: 900;
+		margin-top: 400px;
 }
 .simply-amount{
-
 	font-size: 35px;
 	font-weight: 700;
 	line-height: 40px;
@@ -371,15 +401,7 @@ section .tituloBanda p{
 	font-weight: 700;
 	color:white;
 }
-#empezar{
-	position: absolute;
-	top: 300px;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 4;
-}
+
 
 .inicio {
 	height: 100vh;
@@ -389,56 +411,6 @@ section .tituloBanda p{
 	align-items: center;
 
 }
-.btnCarga{
-	background-color: rgba(0,0,0, .7);
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-	animation: animate 3s linear infinite;
-	z-index: 0;
-}
-.btnCarga:before{
-	content: '';
-	width: 0%;
-	height: 0%;
-	border-radius: 50%;
-	box-sizing: border-box;
-	animation: pequeño 3s linear infinite;
-}
-#btnEmp{
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: 800;
-	top: 50%-60px;
-	left: 50%-60px;
-	font-size: 30px;
-	height: 60px;
-	width: 60px;
-	color: white;
-	z-index:5;
-;
-}
-@keyframes animate{
-	0%{box-shadow: 0 0 10px 0px  blue;}
-
-	100%{
-		box-shadow: 0 0 40px 20px  #00e250;}
-}
- @keyframes pequeño{
- 	0%{ width: 50%;height: 50%;
- 		box-shadow: 0 0 0px 0px  blue;
- 	}
- 
- 	100%{width: 100%; height: 100%;
- 		box-shadow: 0 0 40px 20px  #00e250;;
- 	}
- }
 .apartado{
 	display: flex;
 	justify-content: space-around;
@@ -473,7 +445,7 @@ section .tituloBanda p{
 .izq1 .negro,.izq2 .negro,.cen1 .negro{
 	height: 30%;
 	width: 100%;
-	background-color: rgba(0,0,0,.9);
+	background-color: rgba(198,46,64,.9);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -504,7 +476,8 @@ color: white;
 	font-size: 20px;
 	width: 240px;
 	height: 70px;
-	background-color: black;
+	background-color: #c62e40;
+	border:none;
 	color:white;
 	margin: 0 auto;
 	cursor: pointer;
@@ -536,7 +509,7 @@ display: flex;
 	justify-content: center;
 	padding: 0 10%;
 	color: white;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(198,46,64,0.8);
 	height: 100%;
 	width: 100%;
 }
@@ -547,7 +520,7 @@ display: flex;
 }
 .secInt p{
 	font-size: 20px;
-	color:#BABABA;
+	color:white;
 	font-weight: 200;
 }
 .secInt button{
@@ -561,9 +534,19 @@ width: 220px;
 .seccionPc{
 display: none;
 }
-.foter{
 
-	display: none;
+.CalDia{
+	color: #c62e40;
+}
+#emailHome{ 
+	margin: 40px 0;
+	width: 80%;
+	height: 50px;
+	padding: 0 1.5%;
+	font-size: 18px;
+}
+.Newsletter .boton{
+	margin: 10px 0 0 0;
 }
 /*+++++++++++++++++TICKETS+++++++++++++++++++++++*/
 .filtro{
@@ -714,17 +697,252 @@ line-height: 90px;
 .patro:last-child img{
 	height: 100%;
 }
+/*++++++++++++++ CHAT ++++++++++++++++++++++*/
+.chat{
+	position: fixed;
+
+	top: 80px;
+	right: 0;
+	height: 100vh;
+	width: 100%;
+
+		height: calc(100% - 100px);
+}
+.contactos{
+	width: 100%;
+	background-color: white;
+	position: absolute;
+top: 1000px;
+	
+}
+.contactosabierto{
+top: 0px;
+
+}
+.chatuser{
+	width: 100%;
+	height: 55px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.chatuserOpen{
+		position: absolute;
+	right: 0;
+	bottom:50px;
+	width: 100%;
+	height: 55px;
+	background-color: #c62e40;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.chatuserOpen i{
+	color: white;
+	font-size: 25px;
+	cursor: pointer;
+}
+.chatuser .fotochat{
+margin: 0 20px;
+	height: 35px;
+	width: 35px;
+		overflow: hidden;
+		border-radius: 50%;
+}
+.fotochat .fotouser{
+	width: 100%;
+	height: 100%;	
+	background-size: cover;
+	background-position: center;
+}
+.uno{
+	background-image: url('../img/user/5.jpg');
+}
+.dos{
+	background-image: url('../img/user/20.jpg');
+}
+.tres{
+	background-image: url('../img/user/21.jpg');
+}
+.cuatro{
+	background-image: url('../img/user/9.jpg');
+}
+.cinco{
+	background-image: url('../img/user/10.jpg');
+}
+.seis{
+	background-image: url('../img/user/11.jpg');
+}
+.siete{
+	background-image: url('../img/user/12.jpg');
+}
+.ocho{
+	background-image: url('../img/user/13.jpg');
+}
+.nueve{
+	background-image: url('../img/user/14.jpg');
+}
+.diez{
+	background-image: url('../img/user/15.jpg');
+}
+.once{
+	background-image: url('../img/user/16.jpg');
+}
+.doce{
+	background-image: url('../img/user/17.jpg');
+}
+.trece{
+	background-image: url('../img/user/18.jpg');
+}
+.catorce{
+	background-image: url('../img/user/19.jpg');
+}
+.ventanachat2{
+	right: 0px!important;
+	height: calc(100% - 190px);
+
+}
+.ventanachat{
+	border-top: 1px solid black;
+	position: fixed;
+	bottom: 125px;
+	right: -800px;
+	width:100%;
+	background-color: white;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+}
+.infochat{
+	height: 50px;
+	width: 100%;
+	background-color: #f7f7f7;
+	border-bottom: 2px solid #c62e40;
+	display: flex;
+	align-items: center;
+	
+}
+.cuerpochat{
+	height: 280px;
+	width: 100%;
+}
+.cruz{
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	cursor: pointer;
+}
+#fotoinfo{
+	width: 30px;
+	height: 30px;
+	background-image: url('../img/8.jpg');
+	background-position: center;
+	background-size: cover;
+	margin: 0 20px 0 10px;
+	border-radius: 50px;
+
+}
+
+.escribirchat{
+		position: absolute;
+	bottom: 0px;
+	height: 70px;
+	width: 100%;
+	background-color: #c62e40;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+
+}
+.mensajechat{
+
+	width: 180px;
+	height: 40px;
+	padding: 0 20px;
+	border:none;
+	border-radius: 50px;
+}
+.emoji{
+	font-size: 25px;
+	color: white;
+}
+.enviarmensaje i{
+	font-size: 25px;
+	color: white;
+}
+#cuerpochat{
+	position: absolute;
+	top: 70px;
+	right: 10px;
+	text-align: right;
+
+	font-size: 14px;
+	padding: 5px 10px;
+	border-radius: 4px;
+	line-height: 24px;
+
+}
+/*++++++++++++++++++ PUBLICAR POST +++++++++++++++++++++*/
+
+.publicarPost{
+	height: 140px;
+	width: 100%;
+	padding: 20px;
+	margin-top: 30px;
+	margin-bottom: 240px;
+}
+.publicarPost h2{
+	color: #3e3e3d;
+	font-size: 20px;
+}
+.publicarPost .publicarTexto{
+	width: 100%;
+	height: 60px;
+	margin-top: 20px;
+	padding: 0 40px;
+	border-radius: 60px;
+	border: 1px solid #3e3e3d;
+}
+
+.archivo{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.publicar{
+	margin-top: 25px;
+
+}
+.archivo i{
+	margin-right:  40px;
+	font-size: 25px;
+	color: #3e3e3d;
+}
+.publicar input{
+
+	width: 100%;
+	height: 60px;
+	background-color: #c62e40;
+	color:white;
+
+	cursor: pointer;
+	border:none;
+}
+
 /*+++++++++++++++++FOOTER+++++++++++++++++++++++*/
 footer{
-	height: 300px;
-	padding: 50px;
+	height: 400px;
+	padding: 30px 50px 0 50px;
 	width: 100%;
 	background-color: black;
 	color: white;
 	display: flex;
-	justify-content: center;
+
 	align-items: center;
 	flex-direction: column;
+
 }
 footer p{
 	line-height: 40px;
@@ -773,22 +991,15 @@ footer p{
 	text-transform: uppercase;
 	
 }
-.bandaBoton{
-	position: absolute;
-	left: 20px;
-	bottom: 20px;
-	width: 220px;
-	height: 60px;
-	border: black 1px solid;
-	font-size: 20px;
-	background-color: black;
-	color:white;
-}
+
 .grupoimg img{
 	height: 100%;
 	width: 100%;
 }
 /*++++++++++++++++ ENTRADAS ++++++++++++++++++++++++++++++*/
+.entradas {
+	margin-top: 90px;
+}
 .entradas h2{
 	margin-top: 50px;
 	text-align: center;
@@ -853,12 +1064,14 @@ footer p{
 	font-size: 30px;
 	justify-content: center;
 	align-items: center;
-	border: 3px solid black;
+	border: 3px solid #c62e40;
+	color: #c62e40;
 }
 .entradaboton, .bandaBoton{
 	height: 60px;
 	width: 220px;
-	background-color: black;
+	background-color: #c62e40;
+	font-size: 20px;
 	color: white;
 	border: none;
 	margin: 0 auto;
@@ -1006,7 +1219,7 @@ font-size: 18px;
 }
 /*+++++++++++++++ PAGINA FESTIVAL ++++++++++++++++++++++++*/
 .festival{
-	margin:60px auto;
+	margin:100px auto;
 	width: 100%;
 	padding: 0 5%;
 	height: 1500px;
@@ -1016,11 +1229,10 @@ font-size: 18px;
 	margin-bottom: 20px;
 }
 .cartel{
-	background-image: url('../img/cartel_prueba.jpg');
+	background-image: url('../img/cartel.png');
 	background-position: top center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	height: 100%;
+	background-size: cover;
+	height: 500px;
 	width: 100%;
 	margin: 100px 0;
 }
@@ -1029,12 +1241,19 @@ font-size: 18px;
 	height: 4300px;
 
 }
+.contenmapa{
+	width: 100%;
+	background-color: red;
+
+}
 .mapa{
 	width: 100%;
-	height: 300px;
-	margin: 70px auto;
-	background-color: tomato;
-
+	height: 400px;
+	margin: 150px auto;
+	background-image: url(../img/mapa.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .acampada h2, .infoTaq h2{

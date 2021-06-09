@@ -2,6 +2,7 @@
 /*++++++++++++++ SCROLL HEADER +++++++++++++++++++++*/
 var cabecera = document.getElementById('header');
 var cantidad =document.querySelectorAll('a');
+var menu = document.getElementById('burguer').querySelectorAll('li');
 var iconos = document.querySelectorAll('i');
 let logo = document.getElementById('logotipo');
 window.addEventListener('scroll',headercolor);
@@ -12,6 +13,9 @@ function headercolor(){
 
 	for (var a = 0; a < cantidad.length; a++) {
 	cantidad[a].style.color="white";}
+
+	for (var a = 0; a < menu.length; a++) {
+	menu[a].style.backgroundColor="white";}
 
 	for (var a = 0; a < iconos.length; a++) {
 	iconos[a].style.color="white";}
@@ -28,7 +32,10 @@ function headercolor(){
 	iconos[a].style.color="black";
 	}
 	logotipo.src="img/logo/MamoodNegro.svg";
+		for (var a = 0; a < menu.length; a++) {
+	menu[a].style.backgroundColor="#303030";}
 	}
+
 
 }
 

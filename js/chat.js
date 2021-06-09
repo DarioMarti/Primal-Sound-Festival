@@ -4,7 +4,11 @@ document.getElementById('abrirchat').addEventListener('click', function chatear(
 	document.getElementById('contactos').classList.toggle('contactosabierto');
 
 });
+var cierre = document.getElementById('abrirchat');
+document.getElementById('cruz').addEventListener('click', function cerrar(){
+	document.getElementById('ventanachat').classList.toggle('ventanachat2');
 
+});
 
 
 
