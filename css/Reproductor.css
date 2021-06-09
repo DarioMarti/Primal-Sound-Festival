@@ -289,19 +289,19 @@ input[type=range]::-moz-range-thumb {
 
  }
 .menuLateral{
-	height:40px;
+	height:80px;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-
 position: absolute;
-bottom: 30px;
+bottom: 0px;
 }
 .lateralApart {
 	width:100%;
-	height: 100px;
+	height: 100%;
 	background-color: #c62e40;
+
 	color: white;
 	display: flex;
 	justify-content: space-around;
@@ -640,4 +640,18 @@ z-index: 99;
 	cursor: pointer;
 
 }
+}
+/*++++++++++++ MODO NOCHE ++++++++++++++*/
+.bodynoche{
+	background-color: #282726;
+	color:white;
+}
+.pensandonoche{
+	color:white!important;
+}
+.noche{
+	color: black!important;
+}
+.noche2{
+	background-color: #282726;
 }
