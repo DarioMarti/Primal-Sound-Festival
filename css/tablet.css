@@ -1,8 +1,8 @@
-@media screen and (max-width: 480px){
+@media screen and (max-width: 1200px){
 body{
 	background-color: red;
 }
-.videotablet, .videopc{
+.videomovil, .videopc{
 	display: none;
 }
 .inicioMovil{
@@ -78,7 +78,6 @@ body{
 	height: 50px;
 	position: absolute;
 	top:0;
-
 	right: 40px;
 	z-index: 11;
 	opacity: 0;
@@ -87,15 +86,14 @@ body{
 nav{
 	position: absolute;
 	top:0px;
-	left: -100%;
+	left:0px;
 	width: 100%;
-	height: 800px;
+	height: 100vh;
 	background-color: #c62e40;
 	text-align: center;
 	padding: 150px 10%;
 	display: flex;
 	flex-direction: column;
-
 
 }
 nav a{
@@ -110,7 +108,7 @@ nav li{
 	transition: 1.6s;
 }
 .check:not(:checked)~ nav{
-	left: -500px;
+	left: -1200px;
 	transition: 1.5s;
 }
 
@@ -182,24 +180,19 @@ z-index: 99;
 }
 .logo{
 	z-index: 10;
-	width: 70%;
+	width: 30%;
 
 }
 .logo a{
 	color:white;
-
 width: 100%;
 height: 100%;
 display: flex;
 
 }
 .logo img{
-    width: 170px!important;
-    margin: 0;
-    height: 40px!important;
-}
-
-
+	width: 100%;
+	margin: 0;
 }
 
 aside{
@@ -583,15 +576,15 @@ display: none;
 /*+++++++++++++++++CONCIERTOS+++++++++++++++++++++++*/
 .CalContenido{
 	display: flex;
-	justify-content: center;
-
-	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 	margin: 40px auto;
-	width: 80%;
+	width: 100%;
+	padding: 0 5%;
 
 }
 .CalTitular{
-	padding: 0 10%;
+	padding: 0 5%;
 	margin-bottom: 50px;
 }
 .CalTitular p{
@@ -601,10 +594,11 @@ display: none;
 .CalTitular h2{
 	font-size: 32px;
 }
-.CalContenido .CalConizq{
+.CalConizq{
 	display: flex;
 	align-items: center;
-	width: 40%;
+	width: 50%;
+
 }
 .CalContenido h2{
 	font-size: 60px;
@@ -956,7 +950,7 @@ footer p{
 	position: relative;
 }
 .grupoimg{
-	height:300px;
+	height:500px;
 	width: 100%;
 	background-color: tomato;
 	overflow: hidden;
@@ -989,9 +983,10 @@ footer p{
 }
 .entradas h2{
 	margin-top: 50px;
-	text-align: center;
+	text-align: left;
 	font-size: 26px;
 	text-transform: uppercase;
+	padding: 0 20px;
 }
 .description{
 	font-size: 18px;
@@ -1008,7 +1003,7 @@ footer p{
 	
 }
 .packimg, .diaimg, .conciertoimg{
-	height: 200px;
+	height: 400px;
 	width: 100%;
 	background-size: cover;
 	background-position: top center;	
@@ -1028,7 +1023,7 @@ footer p{
 	font-weight: 600;
 }
 .cantidad{
-	width: 70%;
+	width: 30%;
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
@@ -1043,6 +1038,7 @@ footer p{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
 .numero{
 	width: 100px;
@@ -1220,7 +1216,7 @@ font-size: 18px;
 	background-image: url('../img/cartel.png');
 	background-position: top center;
 	background-size: cover;
-	height: 500px;
+	height: 1000px;
 	width: 100%;
 	margin: 100px 0;
 }
@@ -1231,12 +1227,12 @@ font-size: 18px;
 }
 .contenmapa{
 	width: 100%;
-	background-color: red;
+
 
 }
 .mapa{
 	width: 100%;
-	height: 400px;
+	height: 500px;
 	margin: 150px auto;
 	background-image: url(../img/mapa.svg);
 	background-repeat: no-repeat;
@@ -1250,7 +1246,7 @@ font-size: 18px;
 .infoAcam {
 	display: flex;
 	flex-direction: column;
-
+	margin-bottom: 50px;
 }
 .infoTaq {
 	display: flex;
@@ -1274,8 +1270,8 @@ font-size: 18px;
 }
 .imagenAcam, .imagenTaq{
 	width: 100%;
-	height: 300px;
-	background-size: contain;
+	height: 500px;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
 }
