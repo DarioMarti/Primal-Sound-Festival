@@ -96,6 +96,7 @@ nav{
 	padding: 150px 10%;
 	display: flex;
 	flex-direction: column;
+	z-index: 900;
 
 }
 nav a{
@@ -375,7 +376,7 @@ section .tituloBanda p{
 	border-radius: 5px;
 	display: flex;
 	justify-content: center;
-	z-index: 900;
+	z-index: 600;
 	
 }
 .simply-amount{
