@@ -355,29 +355,35 @@ section .tituloBanda p{
 	background-position: center;
 
 }
-
-.simply-section{
+.franjaBuscador{
+	display: none;
+}
+#contador{
 	width: 100%;
+
+	margin-top: 500px;
+	display: flex;
+	justify-content: center;
+}
+.simply-section{
+	width: 20%;
 	height: 70px;
-	background-color: red;
 	border-radius: 5px;
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	text-align: center;
-		z-index: 900;
-		margin-top: 400px;
+	z-index: 900;
+	
 }
 .simply-amount{
-	font-size: 35px;
+	font-size: 58px;
 	font-weight: 700;
 	line-height: 40px;
-	color: white;
+	color: #c62e40;
 }
 .simply-word{
 	font-size: 25px;
 	font-weight: 700;
-	color:white;
+	color:#c62e40;
 }
 
 

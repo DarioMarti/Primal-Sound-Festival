@@ -1,5 +1,4 @@
 @media screen and (max-width: 480px){
-
 .videotablet, .videopc{
 	display: none;
 }
@@ -192,12 +191,9 @@ display: flex;
 
 }
 .logo img{
-    width: 170px!important;
-    margin: 0;
-    height: 40px!important;
-}
-
-
+	width: 180px!important;
+	margin: 0;
+height: 40px;
 }
 
 aside{
@@ -363,31 +359,32 @@ section .tituloBanda p{
 
 }
 
-.simply-section{
+#contador{
 	width: 100%;
+	margin-top: 500px;
+	display: flex;
+	justify-content: center;
+}
+.simply-section{
+	width: 20%;
 	height: 70px;
-	background-color: red;
 	border-radius: 5px;
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	text-align: center;
-		z-index: 900;
-		margin-top: 400px;
+	z-index: 900;
+	
 }
 .simply-amount{
-	font-size: 35px;
+	font-size: 45px!important;
 	font-weight: 700;
 	line-height: 40px;
-	color: white;
+	color: #c62e40;
 }
 .simply-word{
-	font-size: 25px;
+	font-size: 10px;
 	font-weight: 700;
-	color:white;
+	color:#c62e40;
 }
-
-
 .inicio {
 	height: 100vh;
 	width: 100%;
