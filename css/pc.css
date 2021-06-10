@@ -1,8 +1,9 @@
 @media screen and (min-width: 1200px){
 
-.videotablet, .videomovil{
+.videomovil,.videotablet{
 	display: none;
 }
+
 .inicioMovil{
 	background-image: url('../img/Background_inicio6.jpg');
 	height:100vh;
