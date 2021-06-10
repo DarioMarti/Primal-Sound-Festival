@@ -1,7 +1,7 @@
 @media screen and (max-width: 480px){
 
 .inicioMovil{
-	background-image: url('../img/Background_inicio.jpg');
+	background-image: url('../img/Background_inicio4.jpg');
 	height:100vh;
 	width: 100%;
 	background-position: center;
@@ -10,7 +10,7 @@
 .inicioMovil div{
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(198,46,64,.0);
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto
@@ -30,20 +30,20 @@
 	height: 40px;
 	border-radius: 50px;
 	width: 80%;
-	background-color: #ebd785;
+	background-color: #c62e40;
 	border: none;
-	color:#30302f;
+	color:white;
 	font-size: 16px;
 	text-align: center;
 	cursor: pointer;
 }
 .login{
-	background-color: #2fa1ad;
-	color: #ebd785;
+	background-color: #c62e40;
+	color: white;
 }
 .registrar{
-	background-color: #c62e40;
-	color: #ebd785;
+	background-color: #2fa1ad;
+	color: #white;
 	margin-top: 0px;
 }
 .inicioMovil span{
@@ -58,13 +58,13 @@
 	margin: 0 auto;
 }
 .inicioMovil .regis{
-	color:#b3b3b3;
+	color:#ebd785;
 	margin-left: -30px;
 	font-size: 12px;
 } 
 .regis a{
 		text-transform: lowercase;
-	color: #b3b3b3;
+	color: #ebd785;
 }
 /*++++++++++++++++++++++++++++INDEX++++++++++++++++*/
 #contador{
@@ -1074,7 +1074,8 @@ footer p{
 	font-size: 20px;
 	color: white;
 	border: none;
-	margin: 0 auto;
+	margin: 0 20px;
+
 	cursor: pointer;
 }
 /*+++++++++++++++ PAGINA ARTISTA ++++++++++++++++++++++++*/
@@ -1239,7 +1240,7 @@ font-size: 18px;
 /*++++++++++++++++ INFORMACIÓN ++++++++++++++++++++++++++++++*/
 .informacion{
 	height: 4300px;
-
+	margin-top: 130px;
 }
 .contenmapa{
 	width: 100%;
@@ -1431,7 +1432,39 @@ border-bottom: 1px solid white;
 	font-weight: 600;
 	font-size: 20px;
 }
-/*+++++++++++++++++++++++PROFILE+++++++++++++++++++++*/
+.tituloBandanoche h1,.tituloBandanoche p {
+	color: white !important;
+}
+
+
+
+/*++++++++++++ MODO NOCHE ++++++++++++++*/
+.bodynoche{
+	background-color: #282726;
+	color:white;
+}
+.pensandonoche{
+	color:white!important;
+}
+.noche{
+	color: black!important;
+}
+.noche2{
+	background-color: #282726;
+}
+.seccionfotoProfilenoche p,.seccionfotoProfilenoche h3, .seccionfotoProfilenoche i{
+	color: white !important;
+}
+.datosprofilenoche p{
+	color: white !important;
+}
+//*PROFILES*/
+
+.sectionProfile {
+	width: 50%;
+	margin: 160px auto 0 auto;
+
+}
 .seccionfotoProfile{
 	margin-top: 100px;
 	margin-bottom: 20px;
@@ -1440,7 +1473,7 @@ border-bottom: 1px solid white;
 	flex-direction: column;
 	align-items: center;
 }
-.fotoProfile{
+#fotoProfile{
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
@@ -1500,16 +1533,55 @@ margin-bottom: 100px;
 	margin-bottom: 10px;
 }
 
-.editarProfile input{
+.editarProfile .input{
 	width: 100%;
 	border: none;
 	border-bottom: 1px solid #30302f;
 	margin-bottom: 20px;
+		height: 50px;
+	border: none;
+	border-radius: 50px;
+	box-shadow: 0px 0px 5px #30302f;
+	padding: 0 20px;
 }
 #cambiar{
-	background-color: #30302f;
-	width: 140px;
-	height: 40px;
-	color: #ebd785;
+	margin-top: 0px;
+	background-color: #c62e40;
+	width: 100%;
+	height: 50px;
+	color: white;
+	box-shadow: none;
+	border-radius: 0;
+	cursor: pointer;
+	margin-top: 50px;
 }
+
+.editarProfile .botonfile{
+	width: 100%;
+	background-color: #303030;
+	position: relative;
+	padding: 10px;
+
+
+}
+.editarProfile .botonfile p{
+	
+	width: 100%;
+	color: white;
+	display: flex;
+	justify-content: center;
+
+}
+.editarProfile #file{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+
 }	

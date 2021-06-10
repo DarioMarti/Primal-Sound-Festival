@@ -13,3 +13,23 @@ document.getElementById('nocturno').addEventListener('click',function noche(){
 	
 	document.getElementById('contactos').classList.toggle('noche2');
 })
+/*++++++++++++++ BUSCADOR +++++++++++++++++++++*/
+document.getElementById('nocturno').addEventListener('click',function dia(){
+	document.getElementById('tituloBanda').classList.toggle('tituloBandanoche');
+	document.getElementById('seccionfotoProfile').classList.toggle('seccionfotoProfilenoche');
+	document.getElementById('datosprofile').classList.toggle('datosprofilenoche');
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+

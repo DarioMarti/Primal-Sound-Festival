@@ -941,7 +941,7 @@ transition: 0s !important;
 .contactosabierto{
 	position: absolute;
 	top: 1000px;
-	background-color: red;
+
 }
 .contactoTexto{
 	display: flex;
@@ -1378,7 +1378,7 @@ padding: 0 20px;
 	color:white;
 }
 .pensandonoche{
-	color:white!important;
+	color:white !important;
 }
 .noche{
 	color: black!important;
@@ -1386,7 +1386,9 @@ padding: 0 20px;
 .noche2{
 	background-color: #282726;
 }
-
+.seccionfotoProfilenoche p{
+	color: white !important;
+}
 /*PROFILES*/
 
 .sectionProfile {
