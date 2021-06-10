@@ -1,6 +1,10 @@
+@media screen and (min-width: 480px){
+	 .videomovil{
+	display: none;
+}	
+	}
 @media screen and (max-width: 1200px){
-
-.videomovil, .videopc{
+ .videopc{
 	display: none;
 }
 .inicioMovil{
