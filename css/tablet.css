@@ -1,7 +1,5 @@
 @media screen and (max-width: 1200px){
-body{
-	background-color: red;
-}
+
 .videomovil, .videopc{
 	display: none;
 }
