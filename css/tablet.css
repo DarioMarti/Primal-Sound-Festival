@@ -1,12 +1,11 @@
-@media screen and (min-width: 480px){
+@media screen (min-width: 480px) and (max-width: 1024px) {
 	 .videomovil{
 	display: none;
-}	
-	}
-@media screen and (max-width: 1200px){
+	}	
  .videopc{
 	display: none;
 }
+
 .inicioMovil{
 	background-image: url('../img/Background_inicio4.jpg');
 	height:100vh;

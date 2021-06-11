@@ -10,6 +10,9 @@
 	background-position: center;
 	background-size: cover;
 }
+.franjaBuscador{
+	display: none;
+}
 .inicioMovil div{
 	display: flex;
 	flex-direction: column;
@@ -350,7 +353,7 @@ section .tituloBanda p{
 	position: absolute;
 	top: 0;
 	left: 0;
-	height:800px; 
+	height:700px; 
 	width:100%;
 	background-image: url('../img/home3.jpg');
 	background-repeat: no-repeat;
@@ -359,10 +362,18 @@ section .tituloBanda p{
 	background-position: center;
 
 }
-
+.cuenta{
+		margin-top: 100px;
+		text-align: center;
+}
+.cuenta p{
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-weight: 200;
+}
 #contador{
 	width: 100%;
-	margin-top: 500px;
+
 	display: flex;
 	justify-content: center;
 }
@@ -382,7 +393,7 @@ section .tituloBanda p{
 	color: #c62e40;
 }
 .simply-word{
-	font-size: 10px;
+	font-size: 30px;
 	font-weight: 700;
 	color:#c62e40;
 }
