@@ -1,3 +1,8 @@
+var ancho = screen.width;
+if (ancho > 1023) {
+	logotipo.src="img/logo/MamoodNegro.svg";
+}
+  
 
 /*++++++++++++++ SCROLL HEADER +++++++++++++++++++++*/
 var cabecera = document.getElementById('header');

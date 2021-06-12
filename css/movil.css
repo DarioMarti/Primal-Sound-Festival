@@ -587,6 +587,10 @@ display: none;
 	background-color: white;
 	margin: 10px 0 60px 0;
 }
+.filtrado{
+	display: none;
+}
+
 /*+++++++++++++++++CONCIERTOS+++++++++++++++++++++++*/
 .CalContenido{
 	display: flex;

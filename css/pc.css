@@ -89,6 +89,7 @@
  	font-size: 25px;
  	color:white;
  }
+
  .logo{
  /*	background-color: red;*/
  	width: 25%;
@@ -221,16 +222,25 @@ nav li:hover a .borde{
 	background-size: cover;
 	background-position: center;
 }
+.cuenta{
+		margin-top: 120px;
+		text-align: center;
+}
+.cuenta p{
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-weight: 200;
+}
 #contador{
 	display: flex;
 	justify-content: center;
-	margin:500px 0;
+	margin:0px 0;
 
 }
 .simply-section{
 
 	width: 180px;
-	height: 180px;
+	height: 100px;
 	margin: 0 20px;
 	border-radius: 5px;
 	display: flex;
@@ -240,13 +250,13 @@ nav li:hover a .borde{
 }
 .simply-amount{
 
-	font-size: 95px;
+	font-size: 65px;
 	font-weight: 700;
 	line-height: 40px;
 	color: #c62e40;
 }
 .simply-word{
-	font-size: 55px;
+	font-size: 45px;
 	font-weight: 700;
 	color:#c62e40;
 }
@@ -836,6 +846,70 @@ font-size: 18px;
 .grupoimg img{
 	height: 100%;
 
+}
+/*+++++++++FILTROS+++++++++++++++++++++*/
+.botonfiltro{
+	width: 80px;
+	height: 30px;
+	border-bottom: 1px solid black;
+	color: #c62e40;
+	
+	position: absolute;
+	top: 130px;
+	right: 160px;
+	text-align: center;
+}
+.botonfiltro p{
+		cursor: pointer;
+}
+.filtro{
+	z-index: 599;
+	position: absolute;
+	top: 70px;
+	right: -1000px;
+	height: 400px;
+	width: 650px;
+	background-color: white;
+	border: 5px #c62e40 solid;
+	padding: 0px;
+}
+.filtroabierto{
+	position: absolute;
+	top: 70px;
+	right: 0px;
+	height: 400px;
+	width: 650px;
+	background-color: white;
+	border: 5px #c62e40 solid;
+	padding: 0px;
+}
+.filtro p:hover{
+	color:#c62e40 ;
+}
+.fildia, .filescenario, .filestilo{
+	color: black;
+	width: 500px;
+	height: 100px;
+	margin: 25px auto;
+
+}
+.filtrado{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+}
+ 
+.guardarfiltro{
+	width: 120px;
+	height: 50px;
+	background-color: ;
+	color: white;
+}
+.diafiltrado{
+	display: none;
+}
+.filtrocolor{
+	color: #c62e40;
 }
 /*+++++++++++++++ PAGINA FESTIVAL ++++++++++++++++++++*/
 
