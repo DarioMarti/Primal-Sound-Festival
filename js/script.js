@@ -11,7 +11,6 @@ const canciones = [
 "Club-de-fans-de-John-Boy.mp3",
 "De-la-monarquía-a-la-criptocracia.mp3",
 "I-Want-The-World-To-Stop.mp3",
-"Gaia.mp3"
 ]
 
 var indiceActual = new Array(1)

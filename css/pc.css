@@ -366,9 +366,7 @@ color: white;
 .secDer{
 	height: 700px;
 	width: 50%;
-	background-image: url('../img/3.jpg');
-	background-position: top center;
-	background-size: cover;
+	background-color: #303030;
 }
 .secIzq:hover .secInt{
 display: flex;
@@ -1661,5 +1659,31 @@ margin-bottom: 100px;
 	height: 100%;
 	opacity: 0;
 }
-
+/*++++++++++++LEGAL++++++++++++++++++*/
+.legal{
+	width: 80%;
+	margin: 160px auto;
+}
+.legal h2{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 20px;
+	color: #303030;
+}
+.legalenl{
+	text-decoration: none;
+	color: white;
+}
+.lenguage{
+	float: right;
+	width: 200px;
+	height: 30px;
+	display: flex;
+	justify-content: space-around;
+	font-weight: 600;
+	margin-left: 100%;
+}
+.lenguage p a:hover{
+color: #c62e40;
+}
 }
