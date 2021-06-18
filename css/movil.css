@@ -1023,13 +1023,14 @@ footer p{
 	background-position: top center;	
 }
 .packimg{
-	background-image: url('../img/camping.jpg');
+	background-image: url('../img/6.jpg');
+	
 }
 .diaimg{
 	background-image: url('../img/camping2.jpg');	
 }
 .conciertoimg{
-	background-image: url('../img/camping.jpg');	
+	background-image: url('../img/3.jpg');	
 }
 .precio{
 	margin: 20px 0 30px 0;
@@ -1667,5 +1668,36 @@ color: #c62e40;
 }
 .filtrocolor{
 	color: #c62e40;
+}
+/*++++++++++++++DIRECTO+++++++++++++++*/
+.directo{
+	width: 80%;
+
+		margin: 0 auto;
+}
+.directo h2{
+		margin-top: 140px;
+}
+.stream{
+	width: 100%;
+	height: 300px;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.lateralApart a{
+	text-decoration: none;
+	color: white;
+}
+/*++++++++++++++++ HORARIO ++++++++++++++++++++++++++++++*/
+.horario{
+	width: 100%;
+	background-color: #303030;
+	display: flex;
+	justify-content: center;
+}
+.horariofoto{
+	width: 90%;
+	margin-top: 120px;
+	margin-bottom: 120px;
 }
 }	

@@ -1017,13 +1017,14 @@ footer p{
 	background-position: top center;	
 }
 .packimg{
-	background-image: url('../img/camping.jpg');
+	background-image: url('../img/6.jpg');
+	
 }
 .diaimg{
 	background-image: url('../img/camping2.jpg');	
 }
 .conciertoimg{
-	background-image: url('../img/camping.jpg');	
+	background-image: url('../img/3.jpg');	
 }
 .precio{
 	margin: 20px 0 30px 0;
@@ -1573,6 +1574,123 @@ margin-bottom: 100px;
 	height: 100%;
 	opacity: 0;
 }
+/*++++++++++++LEGAL++++++++++++++++++*/
+.legal{
+	width: 80%;
+	margin: 160px auto;
+}
+.legal h2{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 20px;
+	color: #303030;
+}
+.legalenl{
+	text-decoration: none;
+	color: white;
+}
+.lenguage{
+	float: right;
+	width: 200px;
+	height: 30px;
+	display: flex;
+	justify-content: space-around;
+	font-weight: 600;
+	margin-left: 100%;
+}
+.lenguage p a:hover{
+color: #c62e40;
+}
+/*+++++++++FILTROS+++++++++++++++++++++*/
+.botonfiltro{
+	width: 80px;
+	height: 30px;
+	border-bottom: 1px solid black;
+	color: #c62e40;
+	position: absolute;
+	top: 90px;
+	right: 10px;
+	text-align: center;
+}
+.botonfiltro p{
+		cursor: pointer;
+}
+.filtro{
+	z-index: 599;
+	position: absolute;
+	top: 70px;
+	right: -600px;
+	height: 400px;
+	width: 350px;
+	background-color: white;
+	border: 5px #c62e40 solid;
+	padding: 0px;
+}
+.filtroabierto{
+	position: absolute;
+	top: 70px;
+	right: 0px;
+	height: 400px;
+	width: 350px;
+	background-color: white;
+	border: 5px #c62e40 solid;
+	padding: 0px;
+}
+.filtro p:hover{
+	color:#c62e40 ;
+}
+.fildia, .filescenario, .filestilo{
+	color: black;
+	width: 300px;
+	height: 100px;
+	margin: 25px auto;
 
+}
+.filtrado{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+}
+ 
+.guardarfiltro{
+	width: 120px;
+	height: 50px;
+	background-color: ;
+	color: white;
+}
+.diafiltrado{
+	display: none;
+}
+.filtrocolor{
+	color: #c62e40;
+}/*++++++++++++++DIRECTO+++++++++++++++*/
+.directo{
+	width: 80%;
 
+		margin: 0 auto;
+}
+.directo h2{
+		margin-top: 140px;
+}
+.stream{
+	width: 100%;
+	height: 500px;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.lateralApart a{
+	text-decoration: none;
+	color: white;
+}
+/*++++++++++++++++ HORARIO ++++++++++++++++++++++++++++++*/
+.horario{
+	width: 100%;
+	background-color: #303030;
+	display: flex;
+	justify-content: center;
+}
+.horariofoto{
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
 }	
